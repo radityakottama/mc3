@@ -13,6 +13,9 @@
 		A863CB112122B9790088EDB4 /* MC_3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A863CB0F2122B9790088EDB4 /* MC_3.xcdatamodeld */; };
 		A863CB132122B97D0088EDB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A863CB122122B97D0088EDB4 /* Assets.xcassets */; };
 		A863CB162122B97D0088EDB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A863CB142122B97D0088EDB4 /* LaunchScreen.storyboard */; };
+		A8EF74BE2129B15C003B8E39 /* GuideSCENEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF74BD2129B15C003B8E39 /* GuideSCENEViewController.swift */; };
+		A8EF74C0212AC703003B8E39 /* dogbark.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8EF74BF212AC703003B8E39 /* dogbark.wav */; };
+		A8EF74C2212ACB71003B8E39 /* catmeow.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8EF74C1212ACB71003B8E39 /* catmeow.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		A863CB122122B97D0088EDB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A863CB152122B97D0088EDB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A863CB172122B97D0088EDB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8EF74BD2129B15C003B8E39 /* GuideSCENEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSCENEViewController.swift; sourceTree = "<group>"; };
+		A8EF74BF212AC703003B8E39 /* dogbark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dogbark.wav; sourceTree = "<group>"; };
+		A8EF74C1212ACB71003B8E39 /* catmeow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = catmeow.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,9 @@
 		A863CB072122B9790088EDB4 /* MC 3 */ = {
 			isa = PBXGroup;
 			children = (
+				A8EF74C3212AD088003B8E39 /* Sound */,
 				A863CB082122B9790088EDB4 /* AppDelegate.swift */,
+				A8EF74BD2129B15C003B8E39 /* GuideSCENEViewController.swift */,
 				A863CB0A2122B9790088EDB4 /* ViewController.swift */,
 				A863CB0C2122B9790088EDB4 /* Main.storyboard */,
 				A863CB122122B97D0088EDB4 /* Assets.xcassets */,
@@ -65,6 +73,15 @@
 				A863CB0F2122B9790088EDB4 /* MC_3.xcdatamodeld */,
 			);
 			path = "MC 3";
+			sourceTree = "<group>";
+		};
+		A8EF74C3212AD088003B8E39 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				A8EF74C1212ACB71003B8E39 /* catmeow.wav */,
+				A8EF74BF212AC703003B8E39 /* dogbark.wav */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A863CB162122B97D0088EDB4 /* LaunchScreen.storyboard in Resources */,
+				A8EF74C2212ACB71003B8E39 /* catmeow.wav in Resources */,
+				A8EF74C0212AC703003B8E39 /* dogbark.wav in Resources */,
 				A863CB132122B97D0088EDB4 /* Assets.xcassets in Resources */,
 				A863CB0E2122B9790088EDB4 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8EF74BE2129B15C003B8E39 /* GuideSCENEViewController.swift in Sources */,
 				A863CB0B2122B9790088EDB4 /* ViewController.swift in Sources */,
 				A863CB092122B9790088EDB4 /* AppDelegate.swift in Sources */,
 				A863CB112122B9790088EDB4 /* MC_3.xcdatamodeld in Sources */,

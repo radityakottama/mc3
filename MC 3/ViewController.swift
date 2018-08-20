@@ -7,13 +7,83 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    var audioPlayerDog: AVAudioPlayer!
+    var audioPlayerCat: AVAudioPlayer!
+    
+    @IBOutlet weak var dogImage: UIImageView!
+    @IBOutlet weak var catImage: UIImageView!
+    
+    
+    @IBAction func dogButton(_ sender: Any) {
+        
+        if(catImage.image == #imageLiteral(resourceName: "cat_2"))
+        {
+            catImage.image = #imageLiteral(resourceName: "cat")
+            dogImage.image = #imageLiteral(resourceName: "dog_2")
+            audioPlayerDog.play()
+        }else
+        {
+        dogImage.image = #imageLiteral(resourceName: "dog_2")
+        audioPlayerDog.play()
+        }
+    }
+    @IBAction func catButton(_ sender: Any) {
+        
+        if(dogImage.image == #imageLiteral(resourceName: "dog_2"))
+        {
+            dogImage.image = #imageLiteral(resourceName: "dog")
+            catImage.image = #imageLiteral(resourceName: "cat_2")
+            audioPlayerCat.play()
+        }else
+        {
+        catImage.image = #imageLiteral(resourceName: "cat_2")
+        audioPlayerCat.play()
+        }
+    }
+    
+    
+    @IBAction func startButton(_ sender: Any) {
+        
+        performSegue(withIdentifier: "toGuide", sender: self)
+        
+    }
+    
+
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //SUARA ANJING
+        let urlDog = Bundle.main.url(forResource: "dogbark", withExtension: "wav")
+        
+        do{
+            audioPlayerDog = try AVAudioPlayer(contentsOf: urlDog!)
+            audioPlayerDog.prepareToPlay()
+        }catch let error as NSError {
+            print(error.debugDescription)
+        }
+        
+        //SUARA KUCING
+        let urlCat = Bundle.main.url(forResource: "catmeow", withExtension: "wav")
+        
+        do{
+            audioPlayerCat = try AVAudioPlayer(contentsOf: urlCat!)
+            audioPlayerCat.prepareToPlay()
+        }catch let error as NSError {
+            print(error.debugDescription)
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
