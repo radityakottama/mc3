@@ -169,6 +169,21 @@
             </objects>
             <point key="canvasLocation" x="14244" y="87.931034482758619"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Ng9-aY-JDM">
+            <objects>
+                <viewController id="UdT-fO-xks" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d4d-O7-2Cj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7sV-WX-gBC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7M-bZ-1tC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15997" y="-327"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cat" width="282" height="267"/>
