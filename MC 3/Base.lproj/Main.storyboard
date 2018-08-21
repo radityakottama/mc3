@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cGw-zh-gbk">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -139,15 +139,9 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ikh-cJ-vmg">
                                 <rect key="frame" x="0.0" y="44" width="375" height="689"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hvY-UL-Ay4">
-                                        <rect key="frame" x="168" y="644" width="39" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </pageControl>
-                                </subviews>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sS-vM-BWr">
-                                <rect key="frame" x="32" y="748" width="40" height="30"/>
+                                <rect key="frame" x="16" y="748" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="BACK">
                                     <color key="titleColor" red="1" green="0.7453954576857249" blue="0.49047896234563593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -155,6 +149,24 @@
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="LB1-9G-3Wt"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTk-Hx-IRz">
+                                <rect key="frame" x="319" y="748" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="1" green="0.74539545770000004" blue="0.49047896229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hvY-UL-Ay4">
+                                <rect key="frame" x="168" y="741" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OE5-I5-f8a">
+                                <rect key="frame" x="256" y="748" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="1" green="0.74539545770000004" blue="0.49047896229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -167,27 +179,97 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gob-3q-rNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14244" y="87.931034482758619"/>
+            <point key="canvasLocation" x="14518" y="88"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Ng9-aY-JDM">
+        <!--InstructionSCENE View Controller-->
+        <scene sceneID="V1L-RX-XH0">
             <objects>
-                <viewController id="UdT-fO-xks" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="d4d-O7-2Cj">
+                <viewController id="8EX-zO-zkZ" customClass="InstructionSCENEViewController" customModule="MC_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J0r-8Z-oNR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9X-Pc-Jee">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.34901960784313724" green="0.25882352941176473" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="2dC-IN-IE5">
+                                <rect key="frame" x="168" y="741" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-fA-Dw1">
+                                <rect key="frame" x="0.0" y="44" width="375" height="689"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJy-ZO-bym">
+                                <rect key="frame" x="19" y="748" width="40" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="0.92549019607843142" green="0.72156862745098038" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="7sV-WX-gBC"/>
+                        <viewLayoutGuide key="safeArea" id="kAn-XK-M8O"/>
                     </view>
+                    <connections>
+                        <outlet property="pageControl" destination="2dC-IN-IE5" id="3DK-58-rmh"/>
+                        <outlet property="scrollView" destination="Wnq-fA-Dw1" id="5ZD-PV-gib"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C7M-bZ-1tC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edm-Ul-H8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15997" y="-327"/>
+            <point key="canvasLocation" x="16018" y="-341"/>
+        </scene>
+        <!--ClickerSCENE View Controller-->
+        <scene sceneID="qMN-CK-Uem">
+            <objects>
+                <viewController id="cGw-zh-gbk" customClass="ClickerSCENEViewController" customModule="MC_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gcq-wA-qWd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RI9-63-pBt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.26666666666666666" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCq-eg-Vpf">
+                                <rect key="frame" x="164" y="748" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clicker_2" translatesAutoresizingMaskIntoConstraints="NO" id="nAM-SG-uzd">
+                                <rect key="frame" x="-94" y="152" width="561" height="509"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td8-5e-Wip">
+                                <rect key="frame" x="110" y="415" width="152" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="clickerButotn:" destination="cGw-zh-gbk" eventType="touchUpInside" id="pKv-5M-IeP"/>
+                                    <action selector="clickerButtonClicked:" destination="cGw-zh-gbk" eventType="touchDown" id="JO5-l0-cta"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kb8-vX-1Fm"/>
+                    </view>
+                    <connections>
+                        <outlet property="clickerButtonOutlet" destination="Td8-5e-Wip" id="ExE-oT-PVD"/>
+                        <outlet property="clickerImage" destination="nAM-SG-uzd" id="AVa-Ye-Jkg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wR-mF-e8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16017" y="606"/>
         </scene>
     </scenes>
     <resources>
         <image name="cat" width="282" height="267"/>
         <image name="choose_pet" width="819" height="167"/>
+        <image name="clicker_2" width="2000" height="2000"/>
         <image name="dog" width="194" height="341"/>
         <image name="dog_bone" width="150" height="79"/>
         <image name="dog_bone_2" width="158" height="167"/>
@@ -197,4 +279,7 @@
         <image name="start_button" width="377" height="167"/>
         <image name="title" width="1810" height="341"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4By-W2-wBw"/>
+    </inferredMetricsTieBreakers>
 </document>
