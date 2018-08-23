@@ -33,7 +33,7 @@ class GuideSCENEViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var pageControl: UIPageControl!
     
-    var images: [String] = ["0","1","2"]
+    var images: [String] = ["guide_1","guide_2","guide_3"]
     var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
     
 
