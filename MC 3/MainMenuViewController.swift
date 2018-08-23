@@ -11,6 +11,9 @@ import UIKit
 class MainMenuViewController: UIViewController   {
 
     
+    @IBOutlet weak var obedienceTitleTrain: UILabel!
+    @IBOutlet weak var behavioralTitleTrain: UILabel!
+    
     @IBOutlet weak var obedienceTrainCollection: UICollectionView!
     @IBOutlet weak var behavioralTrainCollection: UICollectionView!
     
@@ -18,9 +21,17 @@ class MainMenuViewController: UIViewController   {
     var behavioralTrain = TrainBank.behavioralTrainData()
     
     let cellScaling: CGFloat = 0.6
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        for family in UIFont.familyNames.sorted(){
+            let names = UIFont.fontNames(forFamilyName: family)
+            print("Family: \(family) Font name: \(names)")
+        }
+        
+        obedienceTitleTrain.font = UIFont(name: "KeepCalm-Medium", size: 17)
+        behavioralTitleTrain.font = UIFont(name: "KeepCalm-Medium", size: 17)
+        UIFont.fontNames(forFamilyName: "KeepCalm-Medium.ttf")
         let screenSize = UIScreen.main.bounds.size
         let layout = obedienceTrainCollection!.collectionViewLayout as!  UICollectionViewFlowLayout
         obedienceTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 1.0)

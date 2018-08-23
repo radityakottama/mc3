@@ -32,9 +32,9 @@ class BehavioralCollectionViewCell: UICollectionViewCell {
         super.layoutSubviews()
         
         self.layer.cornerRadius = 3.0
-        layer.shadowRadius = 2
-        layer.shadowOpacity = 0.6
-        layer.shadowOffset = CGSize (width: 5, height: 10)
+        //layer.shadowRadius = 2
+        //layer.shadowOpacity = 0.6
+        //layer.shadowOffset = CGSize (width: 5, height: 10)
         
         self.clipsToBounds = false
     }

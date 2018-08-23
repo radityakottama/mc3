@@ -23,6 +23,9 @@
 		F8E23480212D6CFB009BF4AA /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2347C212D6CFB009BF4AA /* MainMenuViewController.swift */; };
 		F8E23481212D6CFB009BF4AA /* TrainBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2347D212D6CFB009BF4AA /* TrainBank.swift */; };
 		F8E23482212D6CFB009BF4AA /* BehavioralCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2347E212D6CFB009BF4AA /* BehavioralCollectionViewCell.swift */; };
+		F8E23488212D9234009BF4AA /* KeepCalm-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8E23487212D9234009BF4AA /* KeepCalm-Medium.ttf */; };
+		F8F9E7B9212E89DA004570F1 /* RobotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F9E7B8212E89DA004570F1 /* RobotViewController.swift */; };
+		F8F9E7BC212EA7B8004570F1 /* Robot.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F9E7BA212EA7B8004570F1 /* Robot.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		F8E2347C212D6CFB009BF4AA /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		F8E2347D212D6CFB009BF4AA /* TrainBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainBank.swift; sourceTree = "<group>"; };
 		F8E2347E212D6CFB009BF4AA /* BehavioralCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BehavioralCollectionViewCell.swift; sourceTree = "<group>"; };
+		F8E23487212D9234009BF4AA /* KeepCalm-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KeepCalm-Medium.ttf"; sourceTree = "<group>"; };
+		F8F9E7B8212E89DA004570F1 /* RobotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotViewController.swift; sourceTree = "<group>"; };
+		F8F9E7BB212EA7B8004570F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "MC 3/Base.lproj/Robot.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +82,14 @@
 		A863CB072122B9790088EDB4 /* MC 3 */ = {
 			isa = PBXGroup;
 			children = (
+				F8E23486212D72AF009BF4AA /* Fonts */,
 				A8EF74C3212AD088003B8E39 /* Sound */,
 				A863CB082122B9790088EDB4 /* AppDelegate.swift */,
 				A863CB0A2122B9790088EDB4 /* ViewController.swift */,
 				A8EF74BD2129B15C003B8E39 /* GuideSCENEViewController.swift */,
 				A8EF74C4212BF3C2003B8E39 /* InstructionSCENEViewController.swift */,
 				A8EF74C6212BF5C1003B8E39 /* ClickerSCENEViewController.swift */,
+				F8F9E7BA212EA7B8004570F1 /* Robot.storyboard */,
 				A863CB0C2122B9790088EDB4 /* Main.storyboard */,
 				F8E2347E212D6CFB009BF4AA /* BehavioralCollectionViewCell.swift */,
 				F8E2347C212D6CFB009BF4AA /* MainMenuViewController.swift */,
@@ -91,6 +99,7 @@
 				A863CB142122B97D0088EDB4 /* LaunchScreen.storyboard */,
 				A863CB172122B97D0088EDB4 /* Info.plist */,
 				A863CB0F2122B9790088EDB4 /* MC_3.xcdatamodeld */,
+				F8F9E7B8212E89DA004570F1 /* RobotViewController.swift */,
 			);
 			path = "MC 3";
 			sourceTree = "<group>";
@@ -103,6 +112,14 @@
 				A8EF74CA212C100B003B8E39 /* clickerfix2.wav */,
 			);
 			path = Sound;
+			sourceTree = "<group>";
+		};
+		F8E23486212D72AF009BF4AA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F8E23487212D9234009BF4AA /* KeepCalm-Medium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,10 +180,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E23488212D9234009BF4AA /* KeepCalm-Medium.ttf in Resources */,
 				A863CB162122B97D0088EDB4 /* LaunchScreen.storyboard in Resources */,
 				A8EF74CB212C100B003B8E39 /* clickerfix2.wav in Resources */,
 				A8EF74C2212ACB71003B8E39 /* catmeow.wav in Resources */,
 				A8EF74C0212AC703003B8E39 /* dogbark.wav in Resources */,
+				F8F9E7BC212EA7B8004570F1 /* Robot.storyboard in Resources */,
 				A863CB132122B97D0088EDB4 /* Assets.xcassets in Resources */,
 				A863CB0E2122B9790088EDB4 /* Main.storyboard in Resources */,
 			);
@@ -180,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8E23480212D6CFB009BF4AA /* MainMenuViewController.swift in Sources */,
+				F8F9E7B9212E89DA004570F1 /* RobotViewController.swift in Sources */,
 				F8E2347F212D6CFB009BF4AA /* ObedienceCollectionViewCell.swift in Sources */,
 				A8EF74BE2129B15C003B8E39 /* GuideSCENEViewController.swift in Sources */,
 				A863CB0B2122B9790088EDB4 /* ViewController.swift in Sources */,
@@ -209,6 +229,14 @@
 				A863CB152122B97D0088EDB4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F8F9E7BA212EA7B8004570F1 /* Robot.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8F9E7BB212EA7B8004570F1 /* Base */,
+			);
+			name = Robot.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -333,7 +361,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TDAR667HU;
 				INFOPLIST_FILE = "MC 3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,7 +380,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9TDAR667HU;
 				INFOPLIST_FILE = "MC 3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

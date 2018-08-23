@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i1B-ew-HOc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -163,6 +163,9 @@
                                 <state key="normal" title="BACK">
                                     <color key="titleColor" red="1" green="0.74539545770000004" blue="0.49047896229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="i1B-ew-HOc" kind="show" id="K5m-z9-eNO"/>
+                                </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hvY-UL-Ay4">
                                 <rect key="frame" x="168" y="741" width="39" height="37"/>
@@ -243,9 +246,12 @@
                                 <color key="backgroundColor" red="0.36078431372549019" green="0.26666666666666666" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCq-eg-Vpf">
-                                <rect key="frame" x="164" y="748" width="46" height="30"/>
+                                <rect key="frame" x="222" y="748" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="i1B-ew-HOc" kind="show" animates="NO" id="y2s-Sg-7oY"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clicker_2" translatesAutoresizingMaskIntoConstraints="NO" id="nAM-SG-uzd">
                                 <rect key="frame" x="-94" y="152" width="561" height="509"/>
@@ -259,6 +265,14 @@
                                     <action selector="clickerButtonClicked:" destination="cGw-zh-gbk" eventType="touchDown" id="JO5-l0-cta"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwM-Hi-GsC">
+                                <rect key="frame" x="321" y="44" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Info"/>
+                                <connections>
+                                    <segue destination="twf-xO-6Ia" kind="show" id="z2A-zy-gPM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kb8-vX-1Fm"/>
@@ -270,16 +284,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wR-mF-e8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16016.799999999999" y="605.9113300492611"/>
+            <point key="canvasLocation" x="14594" y="-341"/>
         </scene>
         <!--Training-->
         <scene sceneID="3tA-uw-pZo">
             <objects>
-                <viewController id="i1B-ew-HOc" customClass="MainMenuViewController" customModule="MC_3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UIViewController-i1B-ew-HOc" id="i1B-ew-HOc" customClass="MainMenuViewController" customModule="MC_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NO1-gA-EWu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHX-rt-dnF">
+                                <rect key="frame" x="0.0" y="109" width="375" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99607843137254903" green="0.96862745098039216" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ssQ-Sd-TfI">
+                                <rect key="frame" x="0.0" y="362" width="375" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.96862745100000003" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Qz9-VY-meh">
                                 <rect key="frame" x="0.0" y="147" width="375" height="178"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -304,8 +328,8 @@
                                                     <rect key="frame" x="9" y="0.0" width="142" height="135"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTx-rp-KHE">
-                                                    <rect key="frame" x="46" y="143" width="69" height="20"/>
-                                                    <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
+                                                    <rect key="frame" x="46" y="145" width="69" height="18"/>
+                                                    <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
                                                     <color key="textColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -333,24 +357,30 @@
                                     <constraint firstAttribute="width" secondItem="tc7-0w-9IW" secondAttribute="height" multiplier="94:21" constant="20" id="OCm-hf-KHx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.43529411764705883" green="0.32549019607843138" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iu4-2o-w8E">
-                                <rect key="frame" x="81" y="749" width="72" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iu4-2o-w8E">
+                                <rect key="frame" x="81" y="752" width="47" height="30"/>
                                 <color key="backgroundColor" red="0.56159140789999995" green="0.55887840600000005" blue="0.56430440989999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
-                                <state key="normal" title="Train">
+                                <state key="normal" title="Robot">
                                     <color key="titleColor" red="0.99607843139999996" green="0.96862745100000003" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="CL7-La-cpQ" kind="showDetail" id="c10-88-wT8"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czq-4v-TuT">
-                                <rect key="frame" x="222" y="748" width="80" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czq-4v-TuT">
+                                <rect key="frame" x="246" y="751" width="56" height="30"/>
                                 <color key="backgroundColor" red="0.56159140789999995" green="0.55887840600000005" blue="0.56430440989999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
                                 <state key="normal" title="Clicker">
                                     <color key="titleColor" red="0.99607843139999996" green="0.96862745100000003" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="cGw-zh-gbk" kind="show" animates="NO" id="V3x-Zx-w8D"/>
+                                </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jvC-cN-oM1">
                                 <rect key="frame" x="0.0" y="400" width="375" height="178"/>
@@ -373,11 +403,11 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AzM-5F-YVi">
-                                                    <rect key="frame" x="9" y="0.0" width="142" height="135"/>
+                                                    <rect key="frame" x="9" y="0.0" width="142" height="134.66666666666666"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfQ-98-piz">
-                                                    <rect key="frame" x="9" y="143" width="142" height="20"/>
-                                                    <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
+                                                    <rect key="frame" x="9" y="144.66666666666666" width="142" height="18"/>
+                                                    <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
                                                     <color key="textColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -405,7 +435,7 @@
                                     <constraint firstAttribute="width" secondItem="PwA-rS-nMQ" secondAttribute="height" multiplier="33:7" id="RCq-wY-7LB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.43529411764705883" green="0.32549019607843138" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -418,9 +448,11 @@
                             <constraint firstItem="vR2-u2-CQN" firstAttribute="trailing" secondItem="czq-4v-TuT" secondAttribute="trailing" constant="73" id="B91-Ie-VeP"/>
                             <constraint firstItem="Qz9-VY-meh" firstAttribute="trailing" secondItem="vR2-u2-CQN" secondAttribute="trailing" id="BWa-Ww-ShI"/>
                             <constraint firstItem="tc7-0w-9IW" firstAttribute="top" secondItem="vR2-u2-CQN" secondAttribute="top" constant="74" id="Iuf-rs-7zU"/>
+                            <constraint firstItem="czq-4v-TuT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NO1-gA-EWu" secondAttribute="leading" constant="20" symbolic="YES" id="K0S-g4-EMS"/>
                             <constraint firstItem="Qz9-VY-meh" firstAttribute="top" secondItem="tc7-0w-9IW" secondAttribute="bottom" constant="8" id="VQV-Pi-9zV"/>
                             <constraint firstItem="PwA-rS-nMQ" firstAttribute="top" secondItem="Qz9-VY-meh" secondAttribute="bottom" constant="46" id="mcJ-3v-aGW"/>
                             <constraint firstItem="Qz9-VY-meh" firstAttribute="leading" secondItem="vR2-u2-CQN" secondAttribute="leading" id="nk1-y3-8TV"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Iu4-2o-w8E" secondAttribute="trailing" constant="20" symbolic="YES" id="p4J-Bi-htw"/>
                             <constraint firstItem="tc7-0w-9IW" firstAttribute="leading" secondItem="vR2-u2-CQN" secondAttribute="leading" constant="130" id="pEL-5G-IDa"/>
                             <constraint firstItem="Qz9-VY-meh" firstAttribute="trailing" secondItem="jvC-cN-oM1" secondAttribute="trailing" id="rFU-bV-Qdl"/>
                             <constraint firstItem="vR2-u2-CQN" firstAttribute="trailing" secondItem="tc7-0w-9IW" secondAttribute="trailing" constant="131" id="tcd-BN-d9d"/>
@@ -432,13 +464,23 @@
                     </view>
                     <navigationItem key="navigationItem" title="Training" id="qJ2-Ka-fFy"/>
                     <connections>
+                        <outlet property="behavioralTitleTrain" destination="PwA-rS-nMQ" id="h5y-U8-tIt"/>
                         <outlet property="behavioralTrainCollection" destination="jvC-cN-oM1" id="wBC-fh-5zu"/>
+                        <outlet property="obedienceTitleTrain" destination="tc7-0w-9IW" id="90I-wi-kxw"/>
                         <outlet property="obedienceTrainCollection" destination="Qz9-VY-meh" id="luj-Rk-l8K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awt-Oj-yna" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15263" y="-341"/>
+            <point key="canvasLocation" x="15261.6" y="-341.37931034482762"/>
+        </scene>
+        <!--Robot-->
+        <scene sceneID="MPA-Tc-5lr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Robot" id="CL7-La-cpQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JfP-NC-UfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15883" y="207"/>
         </scene>
     </scenes>
     <resources>
@@ -455,6 +497,7 @@
         <image name="title" width="1810" height="341"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LB1-9G-3Wt"/>
+        <segue reference="y2s-Sg-7oY"/>
+        <segue reference="z2A-zy-gPM"/>
     </inferredMetricsTieBreakers>
 </document>
