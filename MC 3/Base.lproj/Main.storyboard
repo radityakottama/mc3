@@ -115,7 +115,7 @@
                     <connections>
                         <outlet property="catImage" destination="ifq-JE-cde" id="DOM-Ch-A0m"/>
                         <outlet property="dogImage" destination="xY3-qx-Isp" id="7rO-To-BVI"/>
-                        <segue destination="twf-xO-6Ia" kind="modal" identifier="toGuide" modalTransitionStyle="partialCurl" id="4By-W2-wBw"/>
+                        <segue destination="twf-xO-6Ia" kind="show" identifier="toGuide" id="4By-W2-wBw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -143,8 +143,8 @@
                                 <rect key="frame" x="168" y="698" width="216" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ikh-cJ-vmg">
-                                <rect key="frame" x="0.0" y="44" width="375" height="689"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ikh-cJ-vmg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sS-vM-BWr">
@@ -186,7 +186,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gob-3q-rNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="13930" y="-171"/>
+            <point key="canvasLocation" x="13928.799999999999" y="-171.42857142857144"/>
         </scene>
         <!--InstructionSCENE View Controller-->
         <scene sceneID="V1L-RX-XH0">
@@ -205,7 +205,7 @@
                                 <rect key="frame" x="168" y="741" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-fA-Dw1">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-fA-Dw1">
                                 <rect key="frame" x="0.0" y="44" width="375" height="689"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
@@ -215,6 +215,9 @@
                                 <state key="normal" title="BACK">
                                     <color key="titleColor" red="0.92549019607843142" green="0.72156862745098038" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="i1B-ew-HOc" kind="show" id="ZGW-bx-OtV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -434,6 +437,7 @@
                     <connections>
                         <outlet property="behavioralTrainCollection" destination="jvC-cN-oM1" id="wBC-fh-5zu"/>
                         <outlet property="obedienceTrainCollection" destination="Qz9-VY-meh" id="luj-Rk-l8K"/>
+                        <segue destination="8EX-zO-zkZ" kind="show" identifier="toTrain" id="If2-R6-lHG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awt-Oj-yna" userLabel="First Responder" sceneMemberID="firstResponder"/>

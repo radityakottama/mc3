@@ -14,8 +14,11 @@ class MainMenuViewController: UIViewController   {
     @IBOutlet weak var obedienceTrainCollection: UICollectionView!
     @IBOutlet weak var behavioralTrainCollection: UICollectionView!
     
+    var myIndex = 0
     var obedienceTrain = TrainBank.obedienceTrainData()
     var behavioralTrain = TrainBank.behavioralTrainData()
+    
+    var sendTitleTrainBank : String = ""
     
     let cellScaling: CGFloat = 0.6
     
@@ -28,14 +31,17 @@ class MainMenuViewController: UIViewController   {
         let layout2 = behavioralTrainCollection!.collectionViewLayout as! UICollectionViewFlowLayout
         behavioralTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 1.0)
         
-         obedienceTrainCollection?.dataSource = self
+        obedienceTrainCollection?.dataSource = self
         behavioralTrainCollection?.dataSource = self
+        
+        obedienceTrainCollection.delegate = self
+        behavioralTrainCollection.delegate = self
         
     }
 
 }
 
-extension MainMenuViewController: UICollectionViewDataSource {
+extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -62,6 +68,27 @@ extension MainMenuViewController: UICollectionViewDataSource {
         }
         return cell
     }
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
+    {
+     
+        if collectionView == self.obedienceTrainCollection {
+            sendTitleTrainBank = obedienceTrain[indexPath.item].titletrain
+            
+        }else if collectionView == self.behavioralTrainCollection {
+            sendTitleTrainBank = behavioralTrain[indexPath.item].titletrain
+        }
+            performSegue(withIdentifier: "toTrain", sender: self)
+
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination = segue.destination as? InstructionSCENEViewController
+        
+        destination?.titleTrain = sendTitleTrainBank
+    }    
 //    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 //        
 //        let cell2 = behavioralTrainCollection.dequeueReusableCell(withReuseIdentifier: "BehavioralTrainCell", for: indexPath) as! BehavioralCollectionViewCell

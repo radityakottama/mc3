@@ -20,7 +20,7 @@ class BehavioralCollectionViewCell: UICollectionViewCell {
     func updateUI ()
     {
         if let train = train1 {
-            iconTrain.image = train.trainImage
+            iconTrain.image = train.trainImage[0]
             titleTrain.text = train.titletrain
         }
         else {

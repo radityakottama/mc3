@@ -12,6 +12,7 @@ class ObedienceCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var iconTrain: UIImageView!
     @IBOutlet weak var titleTrain: UILabel!
     
+    
     var train: TrainBank? {
         didSet{
             self.updateUI()
@@ -20,7 +21,7 @@ class ObedienceCollectionViewCell: UICollectionViewCell {
     func updateUI ()
     {
         if let train = train {
-            iconTrain.image = train.trainImage
+            iconTrain.image = train.trainImage[0]
             titleTrain.text = train.titletrain
         }
         else {
@@ -30,6 +31,7 @@ class ObedienceCollectionViewCell: UICollectionViewCell {
     }
     override func layoutSubviews() {
         super.layoutSubviews()
+        
         
         self.layer.cornerRadius = 3.0
         layer.shadowRadius = 2

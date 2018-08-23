@@ -12,6 +12,20 @@ class InstructionSCENEViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        for train in obedienceTrain {
+            if train.titletrain == self.titleTrain{
+                images = train.trainImage
+                break
+            }
+        }
+        
+        for train in behavioralTrain {
+            if train.titletrain == self.titleTrain{
+                images = train.trainImage
+                break
+            }
+        }
 
         
         for index in 0..<images.count{
@@ -20,7 +34,7 @@ class InstructionSCENEViewController: UIViewController, UIScrollViewDelegate {
             frame.size = scrollView.frame.size
             
             let imageView = UIImageView(frame: frame)
-            imageView.image = UIImage(named: images[index])
+            imageView.image = images[index]
             self.scrollView.addSubview(imageView)
         }
         
@@ -34,8 +48,12 @@ class InstructionSCENEViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var pageControl: UIPageControl!
     
-    var images: [String] = ["0","1","2"]
+    var titleTrain : String = ""
     var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
+    
+    var images : [UIImage] = []
+    var obedienceTrain = TrainBank.obedienceTrainData()
+    var behavioralTrain = TrainBank.behavioralTrainData()
     
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
