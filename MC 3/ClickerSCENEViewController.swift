@@ -32,7 +32,8 @@ class ClickerSCENEViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBOutlet weak var infoButton: UIButton!
+    
     @IBOutlet weak var clickerImage: UIImageView!
     
     @IBOutlet weak var clickerButtonOutlet: UIButton!
@@ -40,7 +41,7 @@ class ClickerSCENEViewController: UIViewController {
     
     @IBAction func clickerButtonClicked(_ sender: Any) {
         
-        clickerImage.image = #imageLiteral(resourceName: "clicker")
+        clickerImage.image = #imageLiteral(resourceName: "clicker_button")
         audioPlayerClicked.play()
         if audioPlayerClicked.isPlaying == true {
             audioPlayerClicked.currentTime = 0
@@ -50,7 +51,7 @@ class ClickerSCENEViewController: UIViewController {
    
     @IBAction func clickerButotn(_ sender: Any) {
         
-        clickerImage.image = #imageLiteral(resourceName: "clicker_2")
+        clickerImage.image = #imageLiteral(resourceName: "clicker_button_clicked")
 
     }
     
