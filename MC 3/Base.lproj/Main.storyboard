@@ -269,7 +269,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwM-Hi-GsC">
-                                <rect key="frame" x="321" y="44" width="30" height="30"/>
+                                <rect key="frame" x="329" y="44" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Info"/>
                                 <connections>
@@ -287,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wR-mF-e8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14594" y="-341"/>
+            <point key="canvasLocation" x="14375" y="-1130"/>
         </scene>
         <!--Training-->
         <scene sceneID="3tA-uw-pZo">
@@ -501,6 +501,7 @@
         <image name="title" width="1810" height="341"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="V3x-Zx-w8D"/>
         <segue reference="y2s-Sg-7oY"/>
         <segue reference="z2A-zy-gPM"/>
     </inferredMetricsTieBreakers>
