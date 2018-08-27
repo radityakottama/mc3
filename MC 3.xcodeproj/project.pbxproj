@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A81207E9212FF9DB0017FDDB /* ClickerInfoSCENEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81207E8212FF9DB0017FDDB /* ClickerInfoSCENEViewController.swift */; };
+		A81207EB2133DC840017FDDB /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81207EA2133DC840017FDDB /* CircularTransition.swift */; };
 		A863CB092122B9790088EDB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A863CB082122B9790088EDB4 /* AppDelegate.swift */; };
 		A863CB0B2122B9790088EDB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A863CB0A2122B9790088EDB4 /* ViewController.swift */; };
 		A863CB0E2122B9790088EDB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A863CB0C2122B9790088EDB4 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		A81207E8212FF9DB0017FDDB /* ClickerInfoSCENEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerInfoSCENEViewController.swift; sourceTree = "<group>"; };
+		A81207EA2133DC840017FDDB /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 		A863CB052122B9790088EDB4 /* MC 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A863CB082122B9790088EDB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A863CB0A2122B9790088EDB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				F8E23486212D72AF009BF4AA /* Fonts */,
 				A8EF74C3212AD088003B8E39 /* Sound */,
 				A863CB082122B9790088EDB4 /* AppDelegate.swift */,
+				A81207EA2133DC840017FDDB /* CircularTransition.swift */,
 				A863CB0A2122B9790088EDB4 /* ViewController.swift */,
 				A8EF74BD2129B15C003B8E39 /* GuideSCENEViewController.swift */,
 				A8EF74C4212BF3C2003B8E39 /* InstructionSCENEViewController.swift */,
@@ -204,7 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8E23480212D6CFB009BF4AA /* MainMenuDogTrainingViewController.swift in Sources */,
+				A81207EB2133DC840017FDDB /* CircularTransition.swift in Sources */,
 				F8F9E7B9212E89DA004570F1 /* RobotViewController.swift in Sources */,
 				F8E2347F212D6CFB009BF4AA /* ObedienceCollectionViewCell.swift in Sources */,
 				A8EF74BE2129B15C003B8E39 /* GuideSCENEViewController.swift in Sources */,

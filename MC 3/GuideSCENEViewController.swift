@@ -17,10 +17,11 @@ class GuideSCENEViewController: UIViewController, UIScrollViewDelegate {
             
             frame.origin.x = scrollView.frame.size.width * CGFloat(index)
             frame.size = scrollView.frame.size
-            
+        
             let imageView = UIImageView(frame: frame)
             imageView.image = UIImage(named: images[index])
             self.scrollView.addSubview(imageView)
+            
         }
         
         scrollView.contentSize = CGSize(width:(scrollView.frame.size.width * CGFloat(images.count)), height: scrollView.frame.size.height)

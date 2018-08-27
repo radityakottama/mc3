@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i1B-ew-HOc">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+>>>>>>> 16186c8442442884e85d7b5aeee9c32b22f1bb36
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -129,11 +133,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8AN-IB-TTs">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.37647058823529411" green="0.2627450980392157" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paw" translatesAutoresizingMaskIntoConstraints="NO" id="0Sy-g8-Fb9">
                                 <rect key="frame" x="29" y="8" width="104" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -178,7 +177,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.96862745098039216" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="hJs-uF-5o8"/>
                     </view>
                     <connections>
@@ -198,18 +197,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d9X-Pc-Jee">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.34901960784313724" green="0.25882352941176473" blue="0.16862745098039217" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="2dC-IN-IE5">
                                 <rect key="frame" x="168" y="741" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-fA-Dw1">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-fA-Dw1">
                                 <rect key="frame" x="0.0" y="44" width="375" height="689"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJy-ZO-bym">
                                 <rect key="frame" x="19" y="748" width="40" height="30"/>
@@ -222,7 +216,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.96862745098039216" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="kAn-XK-M8O"/>
                     </view>
                     <connections>
@@ -243,15 +237,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bav-e4-OXy">
-                                <rect key="frame" x="309" y="44" width="50" height="50"/>
+                                <rect key="frame" x="319" y="44" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+<<<<<<< HEAD
                                 <state key="normal" title="Info" image="exit_button"/>
                                 <connections>
                                     <segue destination="cGw-zh-gbk" kind="show" id="AFh-FM-W6a"/>
+=======
+                                <color key="backgroundColor" red="0.99607843137254903" green="0.96862745098039216" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Info" image="exit_button_clicked"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="nAy-JY-gWL" eventType="touchUpInside" id="Gr5-DL-aua"/>
+>>>>>>> 16186c8442442884e85d7b5aeee9c32b22f1bb36
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.40392156862745099" green="0.33333333333333331" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="uRb-65-pG4"/>
                     </view>
                     <connections>
@@ -260,7 +261,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q1S-7b-oJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="14313" y="-2124"/>
+=======
+            <point key="canvasLocation" x="14373.6" y="-1816.2561576354681"/>
+>>>>>>> 16186c8442442884e85d7b5aeee9c32b22f1bb36
         </scene>
         <!--ClickerSCENE View Controller-->
         <scene sceneID="qMN-CK-Uem">
@@ -273,17 +278,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RI9-63-pBt">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431372549019" green="0.26666666666666666" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.96862745098039216" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCq-eg-Vpf">
                                 <rect key="frame" x="222" y="748" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="i1B-ew-HOc" kind="show" animates="NO" id="y2s-Sg-7oY"/>
+                                    <action selector="MainMenuButton:" destination="cGw-zh-gbk" eventType="touchUpInside" id="UGq-oK-xod"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clicker_button" translatesAutoresizingMaskIntoConstraints="NO" id="nAM-SG-uzd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clicker_guguk" translatesAutoresizingMaskIntoConstraints="NO" id="nAM-SG-uzd">
                                 <rect key="frame" x="-94" y="152" width="561" height="509"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -296,9 +301,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwM-Hi-GsC">
-                                <rect key="frame" x="309" y="44" width="50" height="50"/>
+                                <rect key="frame" x="320" y="44" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Info" image="info_button"/>
+                                <color key="backgroundColor" red="0.41960784313725491" green="0.32941176470588235" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Info" image="tombol_tanya_clicked_2.0"/>
                                 <connections>
                                     <segue destination="nAy-JY-gWL" kind="show" id="qPk-k3-yh3"/>
                                 </connections>
@@ -311,6 +317,7 @@
                         <outlet property="clickerButtonOutlet" destination="Td8-5e-Wip" id="ExE-oT-PVD"/>
                         <outlet property="clickerImage" destination="nAM-SG-uzd" id="AVa-Ye-Jkg"/>
                         <outlet property="infoButton" destination="UwM-Hi-GsC" id="nkQ-CO-zkk"/>
+                        <segue destination="i1B-ew-HOc" kind="show" identifier="toMainMenu" id="Tpr-WK-bPT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wR-mF-e8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -337,6 +344,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VYy-nU-Izf">
                                 <rect key="frame" x="-2" y="0.0" width="378" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+<<<<<<< HEAD
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHX-rt-dnF">
                                 <rect key="frame" x="-1" y="130" width="377" height="38"/>
@@ -351,6 +359,14 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="G2u-eh-0gC"/>
                                 </constraints>
+=======
+                                <color key="backgroundColor" red="0.41960784313725491" green="0.32941176470588235" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ssQ-Sd-TfI">
+                                <rect key="frame" x="0.0" y="362" width="375" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.39215686274509803" green="0.33333333333333331" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+>>>>>>> 16186c8442442884e85d7b5aeee9c32b22f1bb36
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Qz9-VY-meh">
                                 <rect key="frame" x="-1" y="168" width="375" height="178"/>
@@ -378,7 +394,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTx-rp-KHE">
                                                     <rect key="frame" x="9" y="135" width="142" height="18"/>
                                                     <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
-                                                    <color key="textColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.9882352941176471" green="0.96862745098039216" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -406,7 +422,7 @@
                                     <constraint firstAttribute="height" constant="21" id="0K6-J2-Ne6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
-                                <color key="textColor" red="0.43529411764705883" green="0.32549019607843138" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.9882352941176471" green="0.96862745098039216" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iu4-2o-w8E">
@@ -457,7 +473,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfQ-98-piz">
                                                     <rect key="frame" x="9" y="135" width="142" height="18"/>
                                                     <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
-                                                    <color key="textColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" red="0.9882352941176471" green="0.96862745098039216" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -484,7 +500,7 @@
                                     <constraint firstAttribute="height" constant="21" id="kgp-IY-Jxl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
-                                <color key="textColor" red="0.43529411764705883" green="0.32549019607843138" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.9882352941176471" green="0.96862745098039216" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PELATIHAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NZ-mA-DAm">
@@ -505,7 +521,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.43529411759999997" green="0.32549019610000002" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.96862745098039216" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="czq-4v-TuT" secondAttribute="bottom" constant="31" id="15x-Sc-p8J"/>
                             <constraint firstItem="Iu4-2o-w8E" firstAttribute="leading" secondItem="vR2-u2-CQN" secondAttribute="leading" constant="81" id="7xH-Kn-U71"/>
@@ -824,21 +840,25 @@
     <resources>
         <image name="cat" width="282" height="267"/>
         <image name="choose_pet" width="819" height="167"/>
-        <image name="clicker_button" width="2000" height="2000"/>
+        <image name="clicker_guguk" width="2000" height="2000"/>
         <image name="dog" width="194" height="341"/>
         <image name="dog_bone" width="150" height="79"/>
         <image name="dog_bone_2" width="158" height="167"/>
-        <image name="exit_button" width="2000" height="2000"/>
+        <image name="exit_button_clicked" width="2000" height="2000"/>
         <image name="fish_bone" width="300" height="300"/>
-        <image name="info_button" width="2000" height="2000"/>
         <image name="paw" width="2500" height="2500"/>
         <image name="paw_2" width="747" height="747"/>
         <image name="start_button" width="377" height="167"/>
         <image name="title" width="1810" height="341"/>
+        <image name="tombol_tanya_clicked_2.0" width="2000" height="2000"/>
     </resources>
     <inferredMetricsTieBreakers>
+<<<<<<< HEAD
         <segue reference="LB1-9G-3Wt"/>
         <segue reference="ZGW-bx-OtV"/>
         <segue reference="V3x-Zx-w8D"/>
+=======
+        <segue reference="Tpr-WK-bPT"/>
+>>>>>>> 16186c8442442884e85d7b5aeee9c32b22f1bb36
     </inferredMetricsTieBreakers>
 </document>

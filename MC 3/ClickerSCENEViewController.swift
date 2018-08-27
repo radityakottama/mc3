@@ -1,4 +1,4 @@
-//
+ //
 //  ClickerSCENEViewController.swift
 //  MC 3
 //
@@ -9,14 +9,16 @@
 import UIKit
 import AVFoundation
 
-class ClickerSCENEViewController: UIViewController {
+class ClickerSCENEViewController: UIViewController, UIViewControllerTransitioningDelegate {
 
     var audioPlayerClicked: AVAudioPlayer!
   
+    let transition = CircularTransition()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        infoButton.layer.cornerRadius = infoButton.frame.width / 2
         
         let urlClicked = Bundle.main.url(forResource: "clickerfix2", withExtension: "wav")
         
@@ -41,7 +43,7 @@ class ClickerSCENEViewController: UIViewController {
     
     @IBAction func clickerButtonClicked(_ sender: Any) {
         
-        clickerImage.image = #imageLiteral(resourceName: "clicker_button")
+        clickerImage.image = #imageLiteral(resourceName: "clicker_guguk_clicked") //clicked
         audioPlayerClicked.play()
         if audioPlayerClicked.isPlaying == true {
             audioPlayerClicked.currentTime = 0
@@ -51,11 +53,37 @@ class ClickerSCENEViewController: UIViewController {
    
     @IBAction func clickerButotn(_ sender: Any) {
         
-        clickerImage.image = #imageLiteral(resourceName: "clicker_button_clicked")
+        clickerImage.image = #imageLiteral(resourceName: "clicker_guguk")
 
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let secondVC = segue.destination as? ClickerInfoSCENEViewController{
+            secondVC.transitioningDelegate = self
+            secondVC.modalPresentationStyle = .custom
+        }
+    }
     
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .present
+        transition.startingPoint = infoButton.center
+        transition.circleColor = infoButton.backgroundColor!
+        
+        return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.transitionMode = .dismiss
+        transition.startingPoint = infoButton.center
+        transition.circleColor = infoButton.backgroundColor!
+        
+        return transition
+    }
+    
+    @IBAction func MainMenuButton(_ sender: Any) {
+        
+        performSegue(withIdentifier: "toMainMenu", sender: self)
+    }
     
     
     
