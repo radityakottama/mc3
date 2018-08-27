@@ -9,28 +9,65 @@
 import UIKit
 
 class MainMenuCatTrainingViewController: UIViewController   {
-
-    
+    //MARK: - Outlets2
+    @IBOutlet var changePetView: UIView!
+    @IBOutlet weak var visualEffectView: UIVisualEffectView!
     @IBOutlet weak var obedienceTitleTrain: UILabel!
     @IBOutlet weak var behavioralTitleTrain: UILabel!
     
     @IBOutlet weak var obedienceTrainCollection: UICollectionView!
     @IBOutlet weak var behavioralTrainCollection: UICollectionView!
     
+    //MARK: - Variable
+    var effect:UIVisualEffect!
     var myIndex = 0
     var obedienceTrain = TrainBank.obedienceTrainData()
     var behavioralTrain = TrainBank.behavioralTrainData()
     
     var sendTitleTrainBank : String = ""
-    
     let cellScaling: CGFloat = 0.6
+    
+    
+    //MARK: - Function Button
+    @IBAction func changePet(_ sender: Any) {
+        animateIn()
+        
+    }
+    @IBAction func kucingJenisPeliharaanButton(_ sender: Any) {
+        animateOut()
+    }
+    
+    //MARK: - Function all
+    func animateOut(){
+        UIView.animate(withDuration: 0.3, animations: {
+            self.changePetView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+            self.changePetView.alpha = 0
+            
+            self.visualEffectView.isHidden = true
+        }) {(success:Bool) in
+            self.changePetView.removeFromSuperview()
+        }
+    }
+    func animateIn(){
+        self.view.addSubview(changePetView)
+        visualEffectView.isHidden = false
+        changePetView.center = self.view.center
+        
+        changePetView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3  )
+        changePetView.alpha = 0
+        
+        UIView.animate(withDuration: 0.4) {
+            self.visualEffectView.effect = self.effect
+            self.changePetView.alpha = 1
+            self.changePetView.transform = CGAffineTransform.identity
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        for family in UIFont.familyNames.sorted(){
-            let names = UIFont.fontNames(forFamilyName: family)
-            print("Family: \(family) Font name: \(names)")
-        }
+        effect = visualEffectView.effect
+        visualEffectView.isHidden = true
         
         obedienceTitleTrain.font = UIFont(name: "KeepCalm-Medium", size: 17)
         behavioralTitleTrain.font = UIFont(name: "KeepCalm-Medium", size: 17)

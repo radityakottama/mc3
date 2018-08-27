@@ -21,6 +21,7 @@
 		A8EF74C7212BF5C1003B8E39 /* ClickerSCENEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF74C6212BF5C1003B8E39 /* ClickerSCENEViewController.swift */; };
 		A8EF74CB212C100B003B8E39 /* clickerfix2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8EF74CA212C100B003B8E39 /* clickerfix2.wav */; };
 		F83A345A2134156C003697D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F83A34592134156C003697D4 /* Main.storyboard */; };
+		F86E894A213442EC00963A4C /* MainMenuDogTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2347C212D6CFB009BF4AA /* MainMenuDogTrainingViewController.swift */; };
 		F8E2347F212D6CFB009BF4AA /* ObedienceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2347B212D6CFA009BF4AA /* ObedienceCollectionViewCell.swift */; };
 		F8E23481212D6CFB009BF4AA /* TrainBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2347D212D6CFB009BF4AA /* TrainBank.swift */; };
 		F8E23482212D6CFB009BF4AA /* BehavioralCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2347E212D6CFB009BF4AA /* BehavioralCollectionViewCell.swift */; };
@@ -215,6 +216,7 @@
 				F8F9E7C02133DF93004570F1 /* MainMenuCatTrainingViewController.swift in Sources */,
 				A863CB092122B9790088EDB4 /* AppDelegate.swift in Sources */,
 				A863CB112122B9790088EDB4 /* MC_3.xcdatamodeld in Sources */,
+				F86E894A213442EC00963A4C /* MainMenuDogTrainingViewController.swift in Sources */,
 				A8EF74C7212BF5C1003B8E39 /* ClickerSCENEViewController.swift in Sources */,
 				F8E23482212D6CFB009BF4AA /* BehavioralCollectionViewCell.swift in Sources */,
 				A8EF74C5212BF3C2003B8E39 /* InstructionSCENEViewController.swift in Sources */,
