@@ -18,8 +18,12 @@ class RobotViewController: UIViewController {
     var photoOutput: AVCapturePhotoOutput?
     
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
+    var effect: UIBlurEffect!
+    @IBOutlet weak var visualEffectView: UIVisualEffectView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        effect = visualEffectView.effect
+        visualEffectView.isHidden = true
         setupCaptureSession()
         setupDevice()
         setupInputOutput()
@@ -28,7 +32,9 @@ class RobotViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return UIInterfaceOrientationMask.landscapeRight
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -63,8 +69,8 @@ class RobotViewController: UIViewController {
     func setupPreviewLayer(){
         cameraPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         cameraPreviewLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
-        cameraPreviewLayer?.connection?.videoOrientation = AVCaptureVideoOrientation.portrait
-        cameraPreviewLayer?.frame = self.view.frame
+        cameraPreviewLayer?.connection?.videoOrientation = AVCaptureVideoOrientation.landscapeRight
+        cameraPreviewLayer?.frame = CGRect(x: 0, y: 0, width: 825, height: 419)
         self.view.layer.insertSublayer(cameraPreviewLayer!, at: 0)
     }
     func startRunningCaptureSession(){

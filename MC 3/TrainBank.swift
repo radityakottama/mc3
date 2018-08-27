@@ -24,18 +24,18 @@ class TrainBank {
     static func obedienceTrainData() -> [TrainBank]
     {
         return [
-            TrainBank(titletrain: "Sit", trainImage: [UIImage(named: "sit_button")!,UIImage(named: "sit_button_clicked")!,UIImage(named: "guide_2")!]),
-            TrainBank(titletrain: "Down", trainImage: [UIImage(named: "down_button")!,UIImage(named: "down_button_clicked")!,UIImage(named: "guide_1")!]),
-            TrainBank(titletrain: "Come", trainImage: [UIImage(named: "come_button")!, UIImage(named: "come_button_clicked")!]),
-            TrainBank(titletrain: "Stay", trainImage: [UIImage(named: "stay_button")!, UIImage(named: "stay_button_clicked")!])
+            TrainBank(titletrain: "Duduk", trainImage: [UIImage(named: "sit_button")!,UIImage(named: "sit_button_clicked")!,UIImage(named: "guide_2")!]),
+            TrainBank(titletrain: "Berbaring", trainImage: [UIImage(named: "down_button")!,UIImage(named: "down_button_clicked")!,UIImage(named: "guide_1")!]),
+            TrainBank(titletrain: "Datang", trainImage: [UIImage(named: "come_button")!, UIImage(named: "come_button_clicked")!]),
+            TrainBank(titletrain: "Diam", trainImage: [UIImage(named: "stay_button")!, UIImage(named: "stay_button_clicked")!])
         ]
     }
     static func behavioralTrainData() -> [TrainBank]
     {
         return [
-            TrainBank(titletrain: "Excessive Barking", trainImage: [UIImage(named: "bark_button")!, UIImage(named: "bark_button_clicked")!]),
-            TrainBank(titletrain: "Chewing", trainImage: [UIImage(named: "chewing_button")!, UIImage(named: "chewing_button_clicked")!]),
-            TrainBank(titletrain: "House Breaking", trainImage: [UIImage(named: "breaking_rule_button")!, UIImage(named: "breaking_rule_button_clicked")!]),
+            TrainBank(titletrain: "Menggongong Berlebihan", trainImage: [UIImage(named: "bark_button")!, UIImage(named: "bark_button_clicked")!]),
+            TrainBank(titletrain: "Mengunyah", trainImage: [UIImage(named: "chewing_button")!, UIImage(named: "chewing_button_clicked")!]),
+            TrainBank(titletrain: "Memberantakan Rumah", trainImage: [UIImage(named: "breaking_rule_button")!, UIImage(named: "breaking_rule_button_clicked")!])
         ]
     }
 

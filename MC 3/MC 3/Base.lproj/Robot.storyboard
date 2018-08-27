@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="KeepCalm-Medium.ttf">
+            <string>KeepCalm-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Robot View Controller-->
         <scene sceneID="Q2G-vw-IKX">
@@ -19,72 +24,236 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1Q-cT-FaM">
-                                <rect key="frame" x="632" y="324" width="68" height="30"/>
+                                <rect key="frame" x="120" y="304" width="68" height="30"/>
                                 <state key="normal" title="Backward"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vul-zg-UB2">
-                                <rect key="frame" x="725" y="272" width="36" height="30"/>
+                                <rect key="frame" x="225" y="253" width="36" height="30"/>
                                 <state key="normal" title="Right"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wej-mf-AgS">
-                                <rect key="frame" x="638" y="211" width="56" height="30"/>
+                                <rect key="frame" x="126" y="206" width="56" height="30"/>
                                 <state key="normal" title="Forward"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Uj-Au-jdj">
-                                <rect key="frame" x="576" y="272" width="30" height="30"/>
+                                <rect key="frame" x="62" y="253" width="30" height="30"/>
                                 <state key="normal" title="Left"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHQ-HS-eSA">
-                                <rect key="frame" x="72" y="324" width="30" height="30"/>
-                                <state key="normal" title="Mic"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHQ-HS-eSA">
+                                <rect key="frame" x="633" y="284" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="jFz-XB-oGU"/>
+                                    <constraint firstAttribute="width" constant="70" id="jTi-Yp-2HZ"/>
+                                </constraints>
+                                <state key="normal" title="Mic" image="Mic Button-1"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuB-VZ-vnr">
-                                <rect key="frame" x="70" y="272" width="35" height="30"/>
-                                <state key="normal" title="Food"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuB-VZ-vnr">
+                                <rect key="frame" x="705" y="196" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="0Wj-pt-mIg"/>
+                                    <constraint firstAttribute="height" constant="70" id="bWx-ZM-7OQ"/>
+                                </constraints>
+                                <state key="normal" title="Food" image="Food Button-1"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKD-Mc-adY">
-                                <rect key="frame" x="72" y="217" width="30" height="30"/>
-                                <state key="normal" title="Play"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKD-Mc-adY">
+                                <rect key="frame" x="528" y="284" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="CUr-pX-D5U"/>
+                                    <constraint firstAttribute="height" constant="70" id="cfn-jQ-MdL"/>
+                                </constraints>
+                                <state key="normal" title="Play" image="dog play button-1"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqp-Lv-0NL">
-                                <rect key="frame" x="70" y="20" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqp-Lv-0NL">
+                                <rect key="frame" x="62" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="6gJ-24-MPw"/>
+                                    <constraint firstAttribute="height" constant="50" id="JHx-Je-dfq"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="exit button 2.0"/>
                                 <connections>
-                                    <segue destination="pCe-Pa-0jF" kind="show" id="T3t-JY-y5U"/>
+                                    <segue destination="pCe-Pa-0jF" kind="showDetail" id="T3t-JY-y5U"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTB-n5-RFL">
-                                <rect key="frame" x="725" y="20" width="30" height="30"/>
-                                <state key="normal" title="Wifi"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTB-n5-RFL">
+                                <rect key="frame" x="705" y="10" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="9g6-rB-ODh"/>
+                                    <constraint firstAttribute="width" constant="70" id="ymE-J3-m42"/>
+                                </constraints>
+                                <state key="normal" title="Wifi" image="wifi button"/>
                             </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ujJ-tp-ATj">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="u6M-Aa-sjJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="t1Q-cT-FaM" secondAttribute="trailing" constant="68" id="0j0-Gw-SSn"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="t1Q-cT-FaM" secondAttribute="trailing" constant="580" id="0j0-Gw-SSn"/>
                             <constraint firstItem="oHQ-HS-eSA" firstAttribute="bottom" secondItem="TeP-BP-hcj" secondAttribute="bottom" id="0y2-0j-xwo"/>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="wej-mf-AgS" secondAttribute="trailing" constant="74" id="42U-JU-HdL"/>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="vul-zg-UB2" secondAttribute="trailing" constant="7" id="7LT-x2-4Y8"/>
-                            <constraint firstItem="oHQ-HS-eSA" firstAttribute="top" secondItem="ZuB-VZ-vnr" secondAttribute="bottom" constant="22" id="8hP-PF-y7w"/>
-                            <constraint firstItem="ZuB-VZ-vnr" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="26" id="AzK-q0-kaE"/>
-                            <constraint firstItem="vul-zg-UB2" firstAttribute="leading" secondItem="1Uj-Au-jdj" secondAttribute="trailing" constant="119" id="BSk-43-Tmh"/>
-                            <constraint firstItem="pqp-Lv-0NL" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="26" id="DHn-Us-Jcn"/>
-                            <constraint firstItem="oHQ-HS-eSA" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="28" id="E82-fr-m80"/>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="WTB-n5-RFL" secondAttribute="trailing" constant="13" id="EiM-ve-1is"/>
-                            <constraint firstItem="t1Q-cT-FaM" firstAttribute="top" secondItem="wej-mf-AgS" secondAttribute="bottom" constant="83" id="Fqc-Wd-QyA"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="wej-mf-AgS" secondAttribute="trailing" constant="586" id="42U-JU-HdL"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="vul-zg-UB2" secondAttribute="trailing" constant="507" id="7LT-x2-4Y8"/>
+                            <constraint firstItem="oHQ-HS-eSA" firstAttribute="top" secondItem="ZuB-VZ-vnr" secondAttribute="bottom" constant="18" id="8hP-PF-y7w"/>
+                            <constraint firstItem="ZuB-VZ-vnr" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="661" id="AzK-q0-kaE"/>
+                            <constraint firstItem="vul-zg-UB2" firstAttribute="leading" secondItem="1Uj-Au-jdj" secondAttribute="trailing" constant="133" id="BSk-43-Tmh"/>
+                            <constraint firstItem="pqp-Lv-0NL" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="18" id="DHn-Us-Jcn"/>
+                            <constraint firstItem="oHQ-HS-eSA" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="589" id="E82-fr-m80"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="WTB-n5-RFL" secondAttribute="trailing" constant="-7" id="EiM-ve-1is"/>
+                            <constraint firstItem="t1Q-cT-FaM" firstAttribute="top" secondItem="wej-mf-AgS" secondAttribute="bottom" constant="68" id="Fqc-Wd-QyA"/>
                             <constraint firstItem="pqp-Lv-0NL" firstAttribute="top" secondItem="TeP-BP-hcj" secondAttribute="top" constant="20" id="G0e-jf-5Zo"/>
-                            <constraint firstItem="WTB-n5-RFL" firstAttribute="top" secondItem="TeP-BP-hcj" secondAttribute="top" constant="20" id="Hmw-QD-flS"/>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="bottom" secondItem="1Uj-Au-jdj" secondAttribute="bottom" constant="52" id="IBc-ER-drO"/>
-                            <constraint firstItem="t1Q-cT-FaM" firstAttribute="bottom" secondItem="TeP-BP-hcj" secondAttribute="bottom" id="Pw8-tD-I54"/>
-                            <constraint firstItem="ZuB-VZ-vnr" firstAttribute="top" secondItem="bKD-Mc-adY" secondAttribute="bottom" constant="25" id="VTv-Zw-c38"/>
-                            <constraint firstItem="bKD-Mc-adY" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="28" id="WyB-x1-ttf"/>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="bottom" secondItem="vul-zg-UB2" secondAttribute="bottom" constant="52" id="fAf-Dc-Wr8"/>
+                            <constraint firstItem="WTB-n5-RFL" firstAttribute="top" secondItem="TeP-BP-hcj" secondAttribute="top" constant="10" id="Hmw-QD-flS"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="bottom" secondItem="1Uj-Au-jdj" secondAttribute="bottom" constant="71" id="IBc-ER-drO"/>
+                            <constraint firstItem="t1Q-cT-FaM" firstAttribute="bottom" secondItem="TeP-BP-hcj" secondAttribute="bottom" constant="-20" id="Pw8-tD-I54"/>
+                            <constraint firstItem="ZuB-VZ-vnr" firstAttribute="top" secondItem="bKD-Mc-adY" secondAttribute="bottom" constant="-158" id="VTv-Zw-c38"/>
+                            <constraint firstItem="bKD-Mc-adY" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="484" id="WyB-x1-ttf"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="bottom" secondItem="vul-zg-UB2" secondAttribute="bottom" constant="71" id="fAf-Dc-Wr8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TeP-BP-hcj"/>
                     </view>
+                    <connections>
+                        <outlet property="visualEffectView" destination="ujJ-tp-ATj" id="xXK-34-Pro"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPP-Eh-kjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="lpP-Hf-gTf">
+                    <rect key="frame" x="0.0" y="0.0" width="520" height="151"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Berikan makanan pada peliharaanmu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbn-IO-2zl">
+                            <rect key="frame" x="99" y="20" width="322" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HX-Gz-Pc6">
+                            <rect key="frame" x="321" y="100" width="75" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.4823529412" green="0.48627450979999998" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
+                            <state key="normal" title="Tidak">
+                                <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzd-MT-RO4">
+                            <rect key="frame" x="124" y="100" width="75" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.43529411759999997" green="0.32549019610000002" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
+                            <state key="normal" title="Ya">
+                                <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                    <viewLayoutGuide key="safeArea" id="h9y-p8-Qwg"/>
+                </view>
+                <view contentMode="scaleToFill" id="orv-BA-JJU">
+                    <rect key="frame" x="0.0" y="0.0" width="520" height="151"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hubungkan ke Wifi untuk memantau peliharaanmu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DO8-0W-u7P">
+                            <rect key="frame" x="40" y="20" width="442" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXK-kO-vIf">
+                            <rect key="frame" x="321" y="100" width="75" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.4823529412" green="0.48627450979999998" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
+                            <state key="normal" title="Tidak">
+                                <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAj-aW-A3N">
+                            <rect key="frame" x="124" y="100" width="75" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.43529411759999997" green="0.32549019610000002" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
+                            <state key="normal" title="Ya">
+                                <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                    <viewLayoutGuide key="safeArea" id="Cd1-lA-ZBF"/>
+                </view>
+                <view contentMode="scaleToFill" id="0UY-df-0QL">
+                    <rect key="frame" x="0.0" y="0.0" width="520" height="151"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bermain dengan peliharaanmu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SBY-i2-CBa">
+                            <rect key="frame" x="127" y="20" width="268" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iah-fC-3dS">
+                            <rect key="frame" x="321" y="100" width="75" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.4823529412" green="0.48627450979999998" blue="0.4823529412" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
+                            <state key="normal" title="Tidak">
+                                <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exm-9t-E1V">
+                            <rect key="frame" x="124" y="100" width="75" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.43529411759999997" green="0.32549019610000002" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
+                            <state key="normal" title="Ya">
+                                <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                    <viewLayoutGuide key="safeArea" id="8Gm-pn-AmI"/>
+                </view>
+                <view contentMode="scaleToFill" id="KqM-dQ-OQs">
+                    <rect key="frame" x="0.0" y="0.0" width="520" height="151"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Berbicara dengan peliharaanmu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hn-DG-Nys">
+                            <rect key="frame" x="121" y="20" width="279" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
+                            <color key="textColor" red="0.43529411764705883" green="0.32549019607843138" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLn-sk-M0O">
+                            <rect key="frame" x="321" y="100" width="75" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.4823529411764706" green="0.48627450980392156" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
+                            <state key="normal" title="Tidak">
+                                <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdc-LJ-r0x">
+                            <rect key="frame" x="124" y="100" width="75" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.43529411759999997" green="0.32549019610000002" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
+                            <state key="normal" title="Ya">
+                                <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                    <viewLayoutGuide key="safeArea" id="Bmz-7P-SZx"/>
+                </view>
             </objects>
-            <point key="canvasLocation" x="15872" y="492"/>
+            <point key="canvasLocation" x="15871.921182266011" y="492"/>
         </scene>
         <!--UIViewController-i1B-ew-HOc-->
         <scene sceneID="2Fp-MO-bvr">
@@ -95,4 +264,11 @@
             <point key="canvasLocation" x="15261.6" y="-341.37931034482762"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Food Button-1" width="2000" height="2000"/>
+        <image name="Mic Button-1" width="2000" height="2000"/>
+        <image name="dog play button-1" width="2000" height="2000"/>
+        <image name="exit button 2.0" width="2000" height="2000"/>
+        <image name="wifi button" width="2000" height="2000"/>
+    </resources>
 </document>

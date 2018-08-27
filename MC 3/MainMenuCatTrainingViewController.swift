@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainMenuViewController: UIViewController   {
+class MainMenuCatTrainingViewController: UIViewController   {
 
     
     @IBOutlet weak var obedienceTitleTrain: UILabel!
@@ -52,7 +52,7 @@ class MainMenuViewController: UIViewController   {
 
 }
 
-extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension MainMenuDogTrainingViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
