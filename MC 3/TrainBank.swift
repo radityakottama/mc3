@@ -35,7 +35,7 @@ class TrainBank {
         return [
             TrainBank(titletrain: "Excessive Barking", trainImage: [UIImage(named: "bark_button")!, UIImage(named: "bark_button_clicked")!]),
             TrainBank(titletrain: "Chewing", trainImage: [UIImage(named: "chewing_button")!, UIImage(named: "chewing_button_clicked")!]),
-            TrainBank(titletrain: "House Breaking", trainImage: [UIImage(named: "breaking_rule_button")!, UIImage(named: "breaking_rule_button_clicked")!]),
+            TrainBank(titletrain: "House Breaking", trainImage: [UIImage(named: "breaking_rule_button")!, UIImage(named: "breaking_rule_button_clicked")!])
         ]
     }
 
