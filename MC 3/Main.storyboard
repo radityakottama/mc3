@@ -235,16 +235,14 @@
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bav-e4-OXy">
                                 <rect key="frame" x="319" y="44" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-<<<<<<< HEAD
+
                                 <state key="normal" title="Info" image="exit_button"/>
                                 <connections>
                                     <segue destination="cGw-zh-gbk" kind="show" id="AFh-FM-W6a"/>
-=======
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.96862745098039216" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Info" image="exit_button_clicked"/>
                                 <connections>
                                     <action selector="dismissAction:" destination="nAy-JY-gWL" eventType="touchUpInside" id="Gr5-DL-aua"/>
->>>>>>> 16186c8442442884e85d7b5aeee9c32b22f1bb36
                                 </connections>
                             </button>
                         </subviews>
@@ -336,7 +334,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VYy-nU-Izf">
                                 <rect key="frame" x="-2" y="0.0" width="378" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-<<<<<<< HEAD
+
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHX-rt-dnF">
                                 <rect key="frame" x="-1" y="130" width="377" height="38"/>
@@ -351,14 +349,14 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="G2u-eh-0gC"/>
                                 </constraints>
-=======
+
                                 <color key="backgroundColor" red="0.41960784313725491" green="0.32941176470588235" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ssQ-Sd-TfI">
                                 <rect key="frame" x="0.0" y="362" width="375" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.39215686274509803" green="0.33333333333333331" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
->>>>>>> 16186c8442442884e85d7b5aeee9c32b22f1bb36
+
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Qz9-VY-meh">
                                 <rect key="frame" x="-1" y="168" width="375" height="178"/>
@@ -845,12 +843,12 @@
         <image name="tombol_tanya_clicked_2.0" width="2000" height="2000"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
+
         <segue reference="LB1-9G-3Wt"/>
         <segue reference="ZGW-bx-OtV"/>
         <segue reference="V3x-Zx-w8D"/>
-=======
+
         <segue reference="Tpr-WK-bPT"/>
->>>>>>> 16186c8442442884e85d7b5aeee9c32b22f1bb36
+
     </inferredMetricsTieBreakers>
 </document>
