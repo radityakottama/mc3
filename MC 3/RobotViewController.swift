@@ -18,7 +18,7 @@ class RobotViewController: UIViewController {
     var photoOutput: AVCapturePhotoOutput?
     
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
-    var effect: UIBlurEffect!
+    var effect: UIVisualEffect!
     @IBOutlet weak var visualEffectView: UIVisualEffectView!
     override func viewDidLoad() {
         super.viewDidLoad()

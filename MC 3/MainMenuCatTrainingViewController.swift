@@ -52,7 +52,7 @@ class MainMenuCatTrainingViewController: UIViewController   {
 
 }
 
-extension MainMenuDogTrainingViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension MainMenuCatTrainingViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
