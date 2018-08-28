@@ -74,10 +74,10 @@ class MainMenuCatTrainingViewController: UIViewController   {
         UIFont.fontNames(forFamilyName: "KeepCalm-Medium.ttf")
         let screenSize = UIScreen.main.bounds.size
         let layout = obedienceTrainCollection!.collectionViewLayout as!  UICollectionViewFlowLayout
-        obedienceTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 1.0)
+        obedienceTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 0.0)
         
         let layout2 = behavioralTrainCollection!.collectionViewLayout as! UICollectionViewFlowLayout
-        behavioralTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 1.0)
+        behavioralTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 0.0)
         
         obedienceTrainCollection?.dataSource = self
         behavioralTrainCollection?.dataSource = self
