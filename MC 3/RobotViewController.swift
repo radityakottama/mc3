@@ -20,8 +20,127 @@ class RobotViewController: UIViewController {
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
     var effect: UIVisualEffect!
     @IBOutlet weak var visualEffectView: UIVisualEffectView!
+    
+    @IBOutlet weak var feedbackLabel: UILabel!
+    @IBOutlet var feedbackFoodButtonView: UIView!
+    @IBOutlet var feedbackWifiButtonView: UIView!
+    @IBOutlet var feedbackPlayButtonView: UIView!
+    @IBOutlet var feedbackMicButtonView: UIView!
+    
+    @IBOutlet weak var tidakFoodViewButton: UIButton!
+    @IBOutlet weak var tidakPlayViewButton: UIButton!
+    @IBOutlet weak var tidakWifiViewButton: UIButton!
+    @IBOutlet weak var tidakMicViewButton: UIButton!
+    
+    @IBOutlet weak var wifiButton: UIButton!
+    @IBOutlet weak var foodButton: UIButton!
+    @IBOutlet weak var micButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
+    //MARK: - Function Button
+    
+    
+    @IBAction func funcFoodButton(_ sender: Any) {
+        animateIn(feedbackView: feedbackFoodButtonView)
+    }
+    @IBAction func funcWifiButton(_ sender: Any) {
+        animateIn(feedbackView: feedbackWifiButtonView)
+    }
+    @IBAction func funcPlayButton(_ sender: Any) {
+        animateIn(feedbackView: feedbackPlayButtonView)
+    }
+    @IBAction func funcMicButton(_ sender: Any) {
+        animateIn(feedbackView: feedbackMicButtonView)
+    }
+    
+    
+    
+    @IBAction func yaFoodViewFunc(){
+        robotScreenFeedBackLabel(labelFeedback: "Robot mengeluarkan makanan untuk peliharaanmu")
+        animateOut(feedbackView: feedbackFoodButtonView)
+        feedbackLabel.isHidden = false
+
+    }
+    @IBAction func yaWifiFunc(){
+        robotScreenFeedBackLabel(labelFeedback: "Perangkat berhasil terhubung dengan robot")
+        animateOut(feedbackView: feedbackWifiButtonView)
+        feedbackLabel.isHidden = false
+
+    }
+    @IBAction func yaPlayViewFunc(){
+        robotScreenFeedBackLabel(labelFeedback: "Robot melemparkan bola")
+        animateOut(feedbackView: feedbackPlayButtonView)
+        feedbackLabel.isHidden = false
+
+    }
+    @IBAction func yaMicViewFunc(){
+        robotScreenFeedBackLabel(labelFeedback: "Robot bisa mengeluarkan suaramu")
+        animateOut(feedbackView: feedbackMicButtonView)
+        feedbackLabel.isHidden = false
+
+    }
+    
+    
+    
+    @IBAction func tidakFoodViewFunc(_ sender: Any) {
+        animateOut(feedbackView: feedbackFoodButtonView)
+        feedbackLabel.isHidden = true
+    }
+    @IBAction func tidakMicViewFunc(_ sender: Any){
+        animateOut(feedbackView: feedbackMicButtonView)
+        feedbackLabel.isHidden = true
+    }
+    @IBAction func tidakPlayViewFunc(_ sender: Any) {
+        animateOut(feedbackView: feedbackPlayButtonView)
+        feedbackLabel.isHidden = true
+    }
+    @IBAction func tidakWifiViewFunc(_ sender: Any){
+        animateOut(feedbackView: feedbackWifiButtonView)
+        feedbackLabel.isHidden = true
+    }
+    
+    
+    
+    
+    //MARK: - Function all
+    func robotScreenFeedBackLabel(labelFeedback:String){
+        feedbackLabel.text=labelFeedback
+        UIView.animate(withDuration: 0.4) {
+//            labelFeedback.alpha = 1
+//            labelFeedback.transform = CGAffineTransform.identity
+        }
+        
+        
+    }
+    
+    func animateOut(feedbackView: UIView){
+        UIView.animate(withDuration: 0.3, animations: {
+            feedbackView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3)
+            feedbackView.alpha = 0
+            
+            self.visualEffectView.isHidden = true
+        }) {(success:Bool) in
+            feedbackView.removeFromSuperview()
+        }
+    }
+    func animateIn(feedbackView: UIView){
+        self.view.addSubview(feedbackView)
+        visualEffectView.isHidden = false
+        feedbackView.center = self.view.center
+        
+        feedbackView.transform = CGAffineTransform.init(scaleX: 1.3, y: 1.3  )
+        feedbackView.alpha = 0
+        
+        UIView.animate(withDuration: 0.4) {
+            self.visualEffectView.effect = self.effect
+            feedbackView.alpha = 1
+            feedbackView.transform = CGAffineTransform.identity
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        feedbackLabel.isHidden = true
         effect = visualEffectView.effect
         visualEffectView.isHidden = true
         setupCaptureSession()

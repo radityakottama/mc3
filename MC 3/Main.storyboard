@@ -620,6 +620,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PbW-mR-Jfs">
+                                <rect key="frame" x="-1" y="-1" width="376" height="814"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="fu4-7R-nxf">
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="814"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aqi-W8-2oK">
                                 <rect key="frame" x="-2" y="0.0" width="378" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -702,6 +711,9 @@
                                 <state key="normal" title="Robot">
                                     <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="CL7-La-cpQ" kind="show" animates="NO" id="1MY-n0-PgB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6X-Mo-mhK">
                                 <rect key="frame" x="246" y="751" width="56" height="30"/>
@@ -710,6 +722,9 @@
                                 <state key="normal" title="Clicker">
                                     <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="cGw-zh-gbk" kind="show" animates="NO" id="O54-hb-ymx"/>
+                                </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gxC-zE-BPP">
                                 <rect key="frame" x="0.0" y="400" width="375" height="178"/>
@@ -784,15 +799,6 @@
                                     <action selector="changePet:" destination="tUx-lj-lyx" eventType="touchUpInside" id="xP4-z5-teQ"/>
                                 </connections>
                             </button>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PbW-mR-Jfs">
-                                <rect key="frame" x="-1" y="-1" width="376" height="814"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="fu4-7R-nxf">
-                                    <rect key="frame" x="0.0" y="0.0" width="376" height="814"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" red="0.43529411759999997" green="0.32549019610000002" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -910,7 +916,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="LB1-9G-3Wt"/>
+        <segue reference="1MY-n0-PgB"/>
         <segue reference="6Uc-s8-2Tv"/>
-        <segue reference="V3x-Zx-w8D"/>
+        <segue reference="O54-hb-ymx"/>
     </inferredMetricsTieBreakers>
 </document>

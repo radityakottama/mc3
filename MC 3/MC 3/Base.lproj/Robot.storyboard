@@ -23,6 +23,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awK-m1-nYf">
+                                <rect key="frame" x="131" y="35" width="550" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
+                                <color key="textColor" red="0.99607843137254903" green="0.97254901960784312" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1Q-cT-FaM">
                                 <rect key="frame" x="120" y="304" width="68" height="30"/>
                                 <state key="normal" title="Backward"/>
@@ -46,6 +53,9 @@
                                     <constraint firstAttribute="width" constant="70" id="jTi-Yp-2HZ"/>
                                 </constraints>
                                 <state key="normal" title="Mic" image="Mic Button-1"/>
+                                <connections>
+                                    <action selector="funcMicButton:" destination="EXU-vz-Fba" eventType="touchUpInside" id="vwD-5l-eZF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuB-VZ-vnr">
                                 <rect key="frame" x="705" y="196" width="70" height="70"/>
@@ -54,6 +64,9 @@
                                     <constraint firstAttribute="height" constant="70" id="bWx-ZM-7OQ"/>
                                 </constraints>
                                 <state key="normal" title="Food" image="Food Button-1"/>
+                                <connections>
+                                    <action selector="funcFoodButton:" destination="EXU-vz-Fba" eventType="touchUpInside" id="dte-hC-2lb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKD-Mc-adY">
                                 <rect key="frame" x="528" y="284" width="70" height="70"/>
@@ -62,6 +75,9 @@
                                     <constraint firstAttribute="height" constant="70" id="cfn-jQ-MdL"/>
                                 </constraints>
                                 <state key="normal" title="Play" image="dog play button-1"/>
+                                <connections>
+                                    <action selector="funcPlayButton:" destination="EXU-vz-Fba" eventType="touchUpInside" id="M5b-EC-Y9O"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqp-Lv-0NL">
                                 <rect key="frame" x="62" y="20" width="50" height="50"/>
@@ -81,6 +97,9 @@
                                     <constraint firstAttribute="width" constant="70" id="ymE-J3-m42"/>
                                 </constraints>
                                 <state key="normal" title="Wifi" image="wifi button"/>
+                                <connections>
+                                    <action selector="funcWifiButton:" destination="EXU-vz-Fba" eventType="touchUpInside" id="5qj-hz-F93"/>
+                                </connections>
                             </button>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ujJ-tp-ATj">
                                 <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
@@ -116,7 +135,20 @@
                         <viewLayoutGuide key="safeArea" id="TeP-BP-hcj"/>
                     </view>
                     <connections>
+                        <outlet property="feedbackFoodButtonView" destination="lpP-Hf-gTf" id="WOW-bR-X9s"/>
+                        <outlet property="feedbackLabel" destination="awK-m1-nYf" id="mgo-EE-02h"/>
+                        <outlet property="feedbackMicButtonView" destination="KqM-dQ-OQs" id="TNm-tN-gTN"/>
+                        <outlet property="feedbackPlayButtonView" destination="0UY-df-0QL" id="HuJ-3O-l1Z"/>
+                        <outlet property="feedbackWifiButtonView" destination="orv-BA-JJU" id="2tE-pK-jC6"/>
+                        <outlet property="foodButton" destination="ZuB-VZ-vnr" id="NwV-n2-CI8"/>
+                        <outlet property="micButton" destination="oHQ-HS-eSA" id="XYO-nK-dkN"/>
+                        <outlet property="playButton" destination="bKD-Mc-adY" id="Itn-8i-xN5"/>
+                        <outlet property="tidakFoodViewButton" destination="7HX-Gz-Pc6" id="wXd-as-vAG"/>
+                        <outlet property="tidakMicViewButton" destination="BLn-sk-M0O" id="3rP-aP-K6b"/>
+                        <outlet property="tidakPlayViewButton" destination="iah-fC-3dS" id="8ef-pz-90a"/>
+                        <outlet property="tidakWifiViewButton" destination="CXK-kO-vIf" id="WlN-Rf-xae"/>
                         <outlet property="visualEffectView" destination="ujJ-tp-ATj" id="xXK-34-Pro"/>
+                        <outlet property="wifiButton" destination="WTB-n5-RFL" id="WMH-LS-kNU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wPP-Eh-kjH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -139,6 +171,9 @@
                             <state key="normal" title="Tidak">
                                 <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="tidakFoodViewFunc:" destination="EXU-vz-Fba" eventType="touchUpInside" id="6ze-r9-5Nb"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzd-MT-RO4">
                             <rect key="frame" x="124" y="100" width="75" height="30"/>
@@ -148,6 +183,9 @@
                             <state key="normal" title="Ya">
                                 <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="yaFoodViewFunc" destination="EXU-vz-Fba" eventType="touchUpInside" id="z66-Vv-FP6"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
@@ -172,6 +210,9 @@
                             <state key="normal" title="Tidak">
                                 <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="tidakWifiViewFunc:" destination="EXU-vz-Fba" eventType="touchUpInside" id="3uF-Op-26u"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAj-aW-A3N">
                             <rect key="frame" x="124" y="100" width="75" height="30"/>
@@ -181,6 +222,9 @@
                             <state key="normal" title="Ya">
                                 <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="yaWifiFunc" destination="EXU-vz-Fba" eventType="touchUpInside" id="meq-pc-hUh"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
@@ -205,6 +249,9 @@
                             <state key="normal" title="Tidak">
                                 <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="tidakPlayViewFunc:" destination="EXU-vz-Fba" eventType="touchUpInside" id="Gxz-9b-Wxh"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exm-9t-E1V">
                             <rect key="frame" x="124" y="100" width="75" height="30"/>
@@ -214,6 +261,9 @@
                             <state key="normal" title="Ya">
                                 <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="yaPlayViewFunc" destination="EXU-vz-Fba" eventType="touchUpInside" id="0pc-Uh-d4e"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
@@ -238,6 +288,9 @@
                             <state key="normal" title="Tidak">
                                 <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="tidakMicViewFunc:" destination="EXU-vz-Fba" eventType="touchUpInside" id="gJ8-at-9VX"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdc-LJ-r0x">
                             <rect key="frame" x="124" y="100" width="75" height="30"/>
@@ -247,6 +300,9 @@
                             <state key="normal" title="Ya">
                                 <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
+                            <connections>
+                                <action selector="yaMicViewFunc" destination="EXU-vz-Fba" eventType="touchUpInside" id="PE8-ZC-SMv"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.96862745098039216" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
