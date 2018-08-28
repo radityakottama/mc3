@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cGw-zh-gbk">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,14 +15,14 @@
             <objects>
                 <viewController id="nAy-JY-gWL" customClass="ClickerInfoSCENEViewController" customModule="MC_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bjk-ho-2Ry">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bav-e4-OXy">
-                                <rect key="frame" x="544" y="44" width="40" height="40"/>
+                                <rect key="frame" x="319" y="44" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.96862745098039216" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Info" image="exit_button_clicked"/>
+                                <state key="normal" title="Info" image="exit_button_clicked_2.0"/>
                                 <connections>
                                     <action selector="dismissAction:" destination="nAy-JY-gWL" eventType="touchUpInside" id="Gr5-DL-aua"/>
                                 </connections>
@@ -32,7 +36,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.40392156862745099" green="0.33333333333333331" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.43529411764705883" green="0.32549019607843138" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="uRb-65-pG4"/>
                     </view>
                     <connections>
@@ -48,7 +52,7 @@
             <objects>
                 <viewController id="cGw-zh-gbk" customClass="ClickerSCENEViewController" customModule="MC_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gcq-wA-qWd">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="RI9-63-pBt">
@@ -69,7 +73,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwM-Hi-GsC">
-                                <rect key="frame" x="545" y="44" width="40" height="40"/>
+                                <rect key="frame" x="320" y="44" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.41960784313725491" green="0.32941176470588235" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Info" image="tombol_tanya_clicked_2.0"/>
@@ -106,7 +110,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="UIViewController-i1B-ew-HOc" storyboardName="Main" referencedIdentifier="UIViewController-i1B-ew-HOc" id="2Kn-0U-jd1" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L78-4G-Mnz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14881" y="-171"/>
+            <point key="canvasLocation" x="16197" y="361"/>
         </scene>
     </scenes>
     <resources>
@@ -114,7 +118,7 @@
         <image name="clicker_guguk" width="2000" height="2000"/>
         <image name="clicker_guide_fix" width="1083" height="903"/>
         <image name="clicker_title" width="381" height="93"/>
-        <image name="exit_button_clicked" width="2000" height="2000"/>
+        <image name="exit_button_clicked_2.0" width="2000" height="2000"/>
         <image name="tombol_tanya_clicked_2.0" width="2000" height="2000"/>
     </resources>
 </document>
