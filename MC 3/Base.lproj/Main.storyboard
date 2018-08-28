@@ -862,7 +862,7 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pilih Jenis Peliharaan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbF-jU-uFV">
-                            <rect key="frame" x="79.333333333333329" y="8.9999999999999982" width="185.66666666666669" height="21.333333333333329"/>
+                            <rect key="frame" x="79.666666666666671" y="8.9999999999999982" width="185.66666666666663" height="21.333333333333329"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="21.23" id="Re0-k7-WPM"/>
                             </constraints>
@@ -918,6 +918,6 @@
         <segue reference="LB1-9G-3Wt"/>
         <segue reference="c10-88-wT8"/>
         <segue reference="y2s-Sg-7oY"/>
-        <segue reference="V3x-Zx-w8D"/>
+        <segue reference="AFh-FM-W6a"/>
     </inferredMetricsTieBreakers>
 </document>
