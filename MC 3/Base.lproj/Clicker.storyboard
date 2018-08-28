@@ -6,9 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="KeepCalm-Medium.ttf">
+            <string>KeepCalm-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -902,4 +908,11 @@
         <image name="start_button" width="377" height="167"/>
         <image name="title" width="1810" height="341"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="LB1-9G-3Wt"/>
+        <segue reference="qPk-k3-yh3"/>
+        <segue reference="c10-88-wT8"/>
+        <segue reference="y2s-Sg-7oY"/>
+        <segue reference="AFh-FM-W6a"/>
+    </inferredMetricsTieBreakers>
 </document>
