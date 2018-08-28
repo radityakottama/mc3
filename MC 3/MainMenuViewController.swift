@@ -88,10 +88,12 @@ extension MainMenuViewController: UICollectionViewDataSource, UICollectionViewDe
         if collectionView == self.obedienceTrainCollection {
             sendTitleTrainBank = obedienceTrain[indexPath.item].titletrain
             
+            performSegue(withIdentifier: "toTrain", sender: self)
         }else if collectionView == self.behavioralTrainCollection {
             sendTitleTrainBank = behavioralTrain[indexPath.item].titletrain
+            performSegue(withIdentifier: "toKuis", sender: self)
         }
-            performSegue(withIdentifier: "toTrain", sender: self)
+        
 
     }
     
