@@ -22,7 +22,7 @@
                                 <rect key="frame" x="319" y="44" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.96862745098039216" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Info" image="exit_button_clicked_2.0"/>
+                                <state key="normal" title="Info" image="exit_button_clicked"/>
                                 <connections>
                                     <action selector="dismissAction:" destination="nAy-JY-gWL" eventType="touchUpInside" id="Gr5-DL-aua"/>
                                 </connections>
@@ -118,7 +118,7 @@
         <image name="clicker_guguk" width="2000" height="2000"/>
         <image name="clicker_guide_fix" width="1083" height="903"/>
         <image name="clicker_title" width="381" height="93"/>
-        <image name="exit_button_clicked_2.0" width="2000" height="2000"/>
+        <image name="exit_button_clicked" width="2000" height="2000"/>
         <image name="tombol_tanya_clicked_2.0" width="2000" height="2000"/>
     </resources>
 </document>
