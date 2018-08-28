@@ -94,17 +94,18 @@
 				F8E23486212D72AF009BF4AA /* Fonts */,
 				A8EF74C3212AD088003B8E39 /* Sound */,
 				A863CB082122B9790088EDB4 /* AppDelegate.swift */,
+				F8F9E7BA212EA7B8004570F1 /* Robot.storyboard */,
+				F86E894B2135348200963A4C /* Main.storyboard */,
+				F800554C21353E6C0048F0C9 /* Clicker.storyboard */,
 				A863CB0A2122B9790088EDB4 /* ViewController.swift */,
 				A8EF74BD2129B15C003B8E39 /* GuideSCENEViewController.swift */,
 				A8EF74C4212BF3C2003B8E39 /* InstructionSCENEViewController.swift */,
 				A8EF74C6212BF5C1003B8E39 /* ClickerSCENEViewController.swift */,
 				A81207E8212FF9DB0017FDDB /* ClickerInfoSCENEViewController.swift */,
-				F8F9E7BA212EA7B8004570F1 /* Robot.storyboard */,
 				F8E2347E212D6CFB009BF4AA /* BehavioralCollectionViewCell.swift */,
 				F8E2347C212D6CFB009BF4AA /* MainMenuDogTrainingViewController.swift */,
 				F8F9E7BD2133A299004570F1 /* MainMenuCatTrainingViewController.swift */,
 				F8E2347B212D6CFA009BF4AA /* ObedienceCollectionViewCell.swift */,
-				F86E894B2135348200963A4C /* Main.storyboard */,
 				F8E2347D212D6CFB009BF4AA /* TrainBank.swift */,
 				A81207EA2133DC840017FDDB /* CircularTransition.swift */,
 				A863CB122122B97D0088EDB4 /* Assets.xcassets */,
@@ -129,7 +130,6 @@
 		F8005550213542640048F0C9 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				F800554C21353E6C0048F0C9 /* Clicker.storyboard */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
