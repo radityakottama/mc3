@@ -162,6 +162,9 @@
                                 <state key="normal" title="BACK">
                                     <color key="titleColor" red="1" green="0.74539545770000004" blue="0.49047896229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="i1B-ew-HOc" kind="show" id="K5m-z9-eNO"/>
+                                </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hvY-UL-Ay4">
                                 <rect key="frame" x="168" y="741" width="39" height="37"/>
@@ -214,6 +217,9 @@
                                 <state key="normal" title="BACK">
                                     <color key="titleColor" red="0.92549019607843142" green="0.72156862745098038" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="i1B-ew-HOc" kind="show" id="ZGW-bx-OtV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -817,6 +823,14 @@
             </objects>
             <point key="canvasLocation" x="14313" y="-1221"/>
         </scene>
+        <!--Clicker-->
+        <scene sceneID="ryn-Xh-Uvn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Clicker" id="FxK-l2-8ar" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q9c-DP-g28" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15502" y="790"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cat" width="282" height="267"/>
@@ -832,7 +846,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="LB1-9G-3Wt"/>
-        <segue reference="V3x-Zx-w8D"/>
-        <segue reference="c10-88-wT8"/>
+        <segue reference="O54-hb-ymx"/>
+        <segue reference="1MY-n0-PgB"/>
+        <segue reference="6Uc-s8-2Tv"/>
     </inferredMetricsTieBreakers>
 </document>

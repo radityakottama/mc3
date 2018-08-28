@@ -76,6 +76,7 @@
 			children = (
 				A863CB072122B9790088EDB4 /* MC 3 */,
 				A863CB062122B9790088EDB4 /* Products */,
+				F8005550213542640048F0C9 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,7 +100,6 @@
 				A8EF74C6212BF5C1003B8E39 /* ClickerSCENEViewController.swift */,
 				A81207E8212FF9DB0017FDDB /* ClickerInfoSCENEViewController.swift */,
 				F8F9E7BA212EA7B8004570F1 /* Robot.storyboard */,
-				F800554C21353E6C0048F0C9 /* Clicker.storyboard */,
 				F8E2347E212D6CFB009BF4AA /* BehavioralCollectionViewCell.swift */,
 				F8E2347C212D6CFB009BF4AA /* MainMenuDogTrainingViewController.swift */,
 				F8F9E7BD2133A299004570F1 /* MainMenuCatTrainingViewController.swift */,
@@ -124,6 +124,14 @@
 				A8EF74CA212C100B003B8E39 /* clickerfix2.wav */,
 			);
 			path = Sound;
+			sourceTree = "<group>";
+		};
+		F8005550213542640048F0C9 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				F800554C21353E6C0048F0C9 /* Clicker.storyboard */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		F8E23486212D72AF009BF4AA /* Fonts */ = {
