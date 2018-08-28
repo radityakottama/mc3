@@ -221,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edm-Ul-H8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16490" y="-341"/>
+            <point key="canvasLocation" x="15910" y="-878"/>
         </scene>
         <!--Clicker InfoSCENE View Controller-->
         <scene sceneID="1Zk-Wa-78Z">
@@ -258,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q1S-7b-oJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14373.6" y="-1816.2561576354681"/>
+            <point key="canvasLocation" x="16489" y="790"/>
         </scene>
         <!--ClickerSCENE View Controller-->
         <scene sceneID="qMN-CK-Uem">
@@ -315,7 +315,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wR-mF-e8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14373.6" y="-1130.5418719211823"/>
+            <point key="canvasLocation" x="15502" y="790"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VBo-Mv-Bsa">
+            <objects>
+                <viewController id="sMu-n3-HK1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mdp-HM-Evq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NPB-Xj-QZf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijn-iu-nez" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15910" y="-48"/>
         </scene>
         <!--Training-->
         <scene sceneID="3tA-uw-pZo">
@@ -506,7 +521,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awt-Oj-yna" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15261.6" y="-341.37931034482762"/>
+            <point key="canvasLocation" x="14881" y="-171"/>
         </scene>
         <!--Robot-->
         <scene sceneID="MPA-Tc-5lr">
@@ -514,7 +529,7 @@
                 <viewControllerPlaceholder storyboardName="Robot" id="CL7-La-cpQ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JfP-NC-UfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15883" y="207"/>
+            <point key="canvasLocation" x="14373" y="500"/>
         </scene>
     </scenes>
     <resources>
@@ -536,6 +551,7 @@
         <image name="tombol_tanya_clicked_2.0" width="2000" height="2000"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="If2-R6-lHG"/>
         <segue reference="ZGW-bx-OtV"/>
     </inferredMetricsTieBreakers>
 </document>
