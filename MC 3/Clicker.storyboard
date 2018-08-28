@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cGw-zh-gbk">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Clicker InfoSCENE View Controller-->
+        <scene sceneID="1Zk-Wa-78Z">
+            <objects>
+                <viewController id="nAy-JY-gWL" customClass="ClickerInfoSCENEViewController" customModule="MC_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bjk-ho-2Ry">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bav-e4-OXy">
+                                <rect key="frame" x="544" y="44" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99607843137254903" green="0.96862745098039216" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Info" image="exit_button_clicked"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="nAy-JY-gWL" eventType="touchUpInside" id="Gr5-DL-aua"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clicker_title" translatesAutoresizingMaskIntoConstraints="NO" id="kYy-T5-DBe">
+                                <rect key="frame" x="67" y="133" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clicker_guide_fix" translatesAutoresizingMaskIntoConstraints="NO" id="XLc-iM-MAs">
+                                <rect key="frame" x="28" y="337" width="318" height="326"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40392156862745099" green="0.33333333333333331" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="uRb-65-pG4"/>
+                    </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="Bav-e4-OXy" id="q33-8S-ary"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1S-7b-oJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16489" y="790"/>
+        </scene>
+        <!--ClickerSCENE View Controller-->
+        <scene sceneID="qMN-CK-Uem">
+            <objects>
+                <viewController id="cGw-zh-gbk" customClass="ClickerSCENEViewController" customModule="MC_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gcq-wA-qWd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="RI9-63-pBt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.96862745098039216" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clicker_guguk" translatesAutoresizingMaskIntoConstraints="NO" id="nAM-SG-uzd">
+                                <rect key="frame" x="-94" y="152" width="561" height="509"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td8-5e-Wip">
+                                <rect key="frame" x="115" y="417" width="143" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="clickerButotn:" destination="cGw-zh-gbk" eventType="touchUpInside" id="pKv-5M-IeP"/>
+                                    <action selector="clickerButtonClicked:" destination="cGw-zh-gbk" eventType="touchDown" id="JO5-l0-cta"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwM-Hi-GsC">
+                                <rect key="frame" x="545" y="44" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41960784313725491" green="0.32941176470588235" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Info" image="tombol_tanya_clicked_2.0"/>
+                                <connections>
+                                    <segue destination="nAy-JY-gWL" kind="show" id="qPk-k3-yh3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCq-eg-Vpf">
+                                <rect key="frame" x="164" y="748" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="MainMenuButton:" destination="cGw-zh-gbk" eventType="touchUpInside" id="UGq-oK-xod"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kb8-vX-1Fm"/>
+                    </view>
+                    <connections>
+                        <outlet property="clickerButtonOutlet" destination="Td8-5e-Wip" id="ExE-oT-PVD"/>
+                        <outlet property="clickerImage" destination="nAM-SG-uzd" id="AVa-Ye-Jkg"/>
+                        <outlet property="infoButton" destination="UwM-Hi-GsC" id="nkQ-CO-zkk"/>
+                        <segue destination="2Kn-0U-jd1" kind="show" identifier="toMainMenu" id="Tpr-WK-bPT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wR-mF-e8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15502" y="790"/>
+        </scene>
+        <!--UIViewController-i1B-ew-HOc-->
+        <scene sceneID="gIZ-kg-gjC">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="UIViewController-i1B-ew-HOc" storyboardName="Main" referencedIdentifier="UIViewController-i1B-ew-HOc" id="2Kn-0U-jd1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L78-4G-Mnz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14881" y="-171"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1197" height="2520"/>
+        <image name="clicker_guguk" width="2000" height="2000"/>
+        <image name="clicker_guide_fix" width="1083" height="903"/>
+        <image name="clicker_title" width="381" height="93"/>
+        <image name="exit_button_clicked" width="2000" height="2000"/>
+        <image name="tombol_tanya_clicked_2.0" width="2000" height="2000"/>
+    </resources>
+</document>
