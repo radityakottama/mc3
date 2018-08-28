@@ -6,9 +6,15 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="KeepCalm-Medium.ttf">
+            <string>KeepCalm-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -222,89 +228,6 @@
             </objects>
             <point key="canvasLocation" x="16018" y="-341"/>
         </scene>
-        <!--Clicker InfoSCENE View Controller-->
-        <scene sceneID="1Zk-Wa-78Z">
-            <objects>
-                <viewController id="nAy-JY-gWL" customClass="ClickerInfoSCENEViewController" customModule="MC_3" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Bjk-ho-2Ry">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bav-e4-OXy">
-                                <rect key="frame" x="309" y="44" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Info" image="exit_button"/>
-                                <connections>
-                                    <segue destination="cGw-zh-gbk" kind="show" id="AFh-FM-W6a"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="uRb-65-pG4"/>
-                    </view>
-                    <connections>
-                        <outlet property="dismissButton" destination="Bav-e4-OXy" id="q33-8S-ary"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="q1S-7b-oJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="14313" y="-2124"/>
-        </scene>
-        <!--ClickerSCENE View Controller-->
-        <scene sceneID="qMN-CK-Uem">
-            <objects>
-                <viewController id="cGw-zh-gbk" customClass="ClickerSCENEViewController" customModule="MC_3" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gcq-wA-qWd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RI9-63-pBt">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431372549019" green="0.26666666666666666" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCq-eg-Vpf">
-                                <rect key="frame" x="222" y="748" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="i1B-ew-HOc" kind="show" animates="NO" id="y2s-Sg-7oY"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="clicker_button" translatesAutoresizingMaskIntoConstraints="NO" id="nAM-SG-uzd">
-                                <rect key="frame" x="-94" y="152" width="561" height="509"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td8-5e-Wip">
-                                <rect key="frame" x="115" y="417" width="143" height="133"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="clickerButotn:" destination="cGw-zh-gbk" eventType="touchUpInside" id="pKv-5M-IeP"/>
-                                    <action selector="clickerButtonClicked:" destination="cGw-zh-gbk" eventType="touchDown" id="JO5-l0-cta"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwM-Hi-GsC">
-                                <rect key="frame" x="309" y="44" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Info" image="info_button"/>
-                                <connections>
-                                    <segue destination="nAy-JY-gWL" kind="show" id="qPk-k3-yh3"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="kb8-vX-1Fm"/>
-                    </view>
-                    <connections>
-                        <outlet property="clickerButtonOutlet" destination="Td8-5e-Wip" id="ExE-oT-PVD"/>
-                        <outlet property="clickerImage" destination="nAM-SG-uzd" id="AVa-Ye-Jkg"/>
-                        <outlet property="infoButton" destination="UwM-Hi-GsC" id="nkQ-CO-zkk"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5wR-mF-e8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="14313" y="-1221"/>
-        </scene>
         <!--Training-->
         <scene sceneID="3tA-uw-pZo">
             <objects>
@@ -407,7 +330,7 @@
                                     <color key="titleColor" red="1" green="0.96862745098039216" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cGw-zh-gbk" kind="show" animates="NO" id="V3x-Zx-w8D"/>
+                                    <segue destination="5dC-3M-a5N" kind="show" animates="NO" id="V3x-Zx-w8D"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jvC-cN-oM1">
@@ -711,7 +634,7 @@
                                     <color key="titleColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cGw-zh-gbk" kind="show" animates="NO" id="O54-hb-ymx"/>
+                                    <segue destination="5dC-3M-a5N" kind="show" animates="NO" id="O54-hb-ymx"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gxC-zE-BPP">
@@ -886,20 +809,30 @@
             </objects>
             <point key="canvasLocation" x="15262" y="-1183"/>
         </scene>
+        <!--Clicker-->
+        <scene sceneID="jZx-UL-zL8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Clicker" id="5dC-3M-a5N" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S8g-n9-6li" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14313" y="-1221"/>
+        </scene>
     </scenes>
     <resources>
         <image name="cat" width="282" height="267"/>
         <image name="choose_pet" width="819" height="167"/>
-        <image name="clicker_button" width="2000" height="2000"/>
         <image name="dog" width="194" height="341"/>
         <image name="dog_bone" width="150" height="79"/>
         <image name="dog_bone_2" width="158" height="167"/>
-        <image name="exit_button" width="2000" height="2000"/>
         <image name="fish_bone" width="300" height="300"/>
-        <image name="info_button" width="2000" height="2000"/>
         <image name="paw" width="2500" height="2500"/>
         <image name="paw_2" width="747" height="747"/>
         <image name="start_button" width="377" height="167"/>
         <image name="title" width="1810" height="341"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="LB1-9G-3Wt"/>
+        <segue reference="V3x-Zx-w8D"/>
+        <segue reference="c10-88-wT8"/>
+    </inferredMetricsTieBreakers>
 </document>

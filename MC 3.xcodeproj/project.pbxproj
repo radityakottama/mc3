@@ -20,6 +20,7 @@
 		A8EF74C5212BF3C2003B8E39 /* InstructionSCENEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF74C4212BF3C2003B8E39 /* InstructionSCENEViewController.swift */; };
 		A8EF74C7212BF5C1003B8E39 /* ClickerSCENEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF74C6212BF5C1003B8E39 /* ClickerSCENEViewController.swift */; };
 		A8EF74CB212C100B003B8E39 /* clickerfix2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8EF74CA212C100B003B8E39 /* clickerfix2.wav */; };
+		F800554E21353E6C0048F0C9 /* Clicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F800554C21353E6C0048F0C9 /* Clicker.storyboard */; };
 		F86E894A213442EC00963A4C /* MainMenuDogTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2347C212D6CFB009BF4AA /* MainMenuDogTrainingViewController.swift */; };
 		F86E894D2135348200963A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86E894B2135348200963A4C /* Main.storyboard */; };
 		F8E2347F212D6CFB009BF4AA /* ObedienceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2347B212D6CFA009BF4AA /* ObedienceCollectionViewCell.swift */; };
@@ -47,6 +48,7 @@
 		A8EF74C4212BF3C2003B8E39 /* InstructionSCENEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionSCENEViewController.swift; sourceTree = "<group>"; };
 		A8EF74C6212BF5C1003B8E39 /* ClickerSCENEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerSCENEViewController.swift; sourceTree = "<group>"; };
 		A8EF74CA212C100B003B8E39 /* clickerfix2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clickerfix2.wav; sourceTree = "<group>"; };
+		F800554D21353E6C0048F0C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "MC 3/Base.lproj/Clicker.storyboard"; sourceTree = "<group>"; };
 		F86E894C2135348200963A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8E2347B212D6CFA009BF4AA /* ObedienceCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObedienceCollectionViewCell.swift; sourceTree = "<group>"; };
 		F8E2347C212D6CFB009BF4AA /* MainMenuDogTrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuDogTrainingViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				A8EF74C6212BF5C1003B8E39 /* ClickerSCENEViewController.swift */,
 				A81207E8212FF9DB0017FDDB /* ClickerInfoSCENEViewController.swift */,
 				F8F9E7BA212EA7B8004570F1 /* Robot.storyboard */,
+				F800554C21353E6C0048F0C9 /* Clicker.storyboard */,
 				F8E2347E212D6CFB009BF4AA /* BehavioralCollectionViewCell.swift */,
 				F8E2347C212D6CFB009BF4AA /* MainMenuDogTrainingViewController.swift */,
 				F8F9E7BD2133A299004570F1 /* MainMenuCatTrainingViewController.swift */,
@@ -196,6 +199,7 @@
 				A8EF74C2212ACB71003B8E39 /* catmeow.wav in Resources */,
 				A8EF74C0212AC703003B8E39 /* dogbark.wav in Resources */,
 				F8F9E7BC212EA7B8004570F1 /* Robot.storyboard in Resources */,
+				F800554E21353E6C0048F0C9 /* Clicker.storyboard in Resources */,
 				A863CB132122B97D0088EDB4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +237,14 @@
 				A863CB152122B97D0088EDB4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F800554C21353E6C0048F0C9 /* Clicker.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F800554D21353E6C0048F0C9 /* Base */,
+			);
+			name = Clicker.storyboard;
 			sourceTree = "<group>";
 		};
 		F86E894B2135348200963A4C /* Main.storyboard */ = {
