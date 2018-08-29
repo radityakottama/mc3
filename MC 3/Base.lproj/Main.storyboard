@@ -210,7 +210,7 @@
                                 <rect key="frame" x="-3" y="0.0" width="379" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ssQ-Sd-TfI">
-                                <rect key="frame" x="0.0" y="398.66666666666669" width="377" height="38"/>
+                                <rect key="frame" x="0.0" y="400" width="377" height="38"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERILAKU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PwA-rS-nMQ">
                                         <rect key="frame" x="20" y="13" width="99" height="21"/>
@@ -240,7 +240,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Qz9-VY-meh">
-                                <rect key="frame" x="-2" y="206.66666666666663" width="377" height="195"/>
+                                <rect key="frame" x="-2" y="208" width="377" height="195"/>
                                 <color key="backgroundColor" red="0.90980392156862744" green="0.85490196078431369" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="195" id="onm-XP-zXk"/>
@@ -334,13 +334,13 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PELATIHAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NZ-mA-DAm">
-                                <rect key="frame" x="81" y="87" width="212" height="39.666666666666657"/>
+                                <rect key="frame" x="81" y="87" width="212" height="41"/>
                                 <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="34"/>
                                 <color key="textColor" red="0.43529411764705883" green="0.32549019607843138" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GE-5i-Tyg">
-                                <rect key="frame" x="318" y="44" width="37" height="28"/>
+                                <rect key="frame" x="313" y="44" width="42" height="28"/>
                                 <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="13"/>
                                 <state key="normal" title="UBAH">
                                     <color key="titleColor" red="0.43529411759999997" green="0.32549019610000002" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -364,7 +364,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHX-rt-dnF">
-                                <rect key="frame" x="-1" y="168.66666666666666" width="376" height="38"/>
+                                <rect key="frame" x="-1" y="170" width="376" height="38"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEPATUHAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tc7-0w-9IW">
                                         <rect key="frame" x="20" y="9" width="114" height="21"/>
@@ -377,7 +377,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Informasi" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yF-Kc-nPI">
-                                        <rect key="frame" x="302" y="11" width="54" height="16"/>
+                                        <rect key="frame" x="293.66666666666669" y="11" width="62.333333333333314" height="16"/>
                                         <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="13"/>
                                         <color key="textColor" red="0.43529411759999997" green="0.32549019610000002" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -935,9 +935,8 @@
         <image name="title" width="4462" height="3426"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nZ6-l1-CBS"/>
         <segue reference="V3x-Zx-w8D"/>
         <segue reference="c10-88-wT8"/>
-        <segue reference="pRO-Ew-6Vd"/>
+        <segue reference="6Uc-s8-2Tv"/>
     </inferredMetricsTieBreakers>
 </document>
