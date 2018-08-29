@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         
         //SUARA ANJING
         let urlDog = Bundle.main.url(forResource: "dogbark", withExtension: "wav")
-        
+        dogImage.image = #imageLiteral(resourceName: "dog_2")
         do{
             audioPlayerDog = try AVAudioPlayer(contentsOf: urlDog!)
             audioPlayerDog.prepareToPlay()
