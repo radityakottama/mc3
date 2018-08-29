@@ -43,7 +43,6 @@
 		A863CB0A2122B9790088EDB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A863CB102122B9790088EDB4 /* MC_3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MC_3.xcdatamodel; sourceTree = "<group>"; };
 		A863CB122122B97D0088EDB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A863CB152122B97D0088EDB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A863CB172122B97D0088EDB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8E152BC21355879003A5E28 /* Clicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Clicker.storyboard; sourceTree = "<group>"; };
 		A8E152BE21355C30003A5E28 /* KuisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuisViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +116,7 @@
 				A8E152C021356655003A5E28 /* KuisBank.swift */,
 				A81207EA2133DC840017FDDB /* CircularTransition.swift */,
 				A863CB122122B97D0088EDB4 /* Assets.xcassets */,
-				A863CB142122B97D0088EDB4 /* LaunchScreen.storyboard */,
+				F800554C21353E6C0048F0C9 /* Clicker.storyboard */,
 				A863CB172122B97D0088EDB4 /* Info.plist */,
 				A863CB0F2122B9790088EDB4 /* MC_3.xcdatamodeld */,
 				F8F9E7B8212E89DA004570F1 /* RobotViewController.swift */,
@@ -209,8 +208,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F806C05C2135A34D00CD3E9F /* LaunchScreen.storyboard in Resources */,
 				F8E23488212D9234009BF4AA /* KeepCalm-Medium.ttf in Resources */,
-				A863CB162122B97D0088EDB4 /* LaunchScreen.storyboard in Resources */,
 				A8EF74CB212C100B003B8E39 /* clickerfix2.wav in Resources */,
 				F86E894D2135348200963A4C /* Main.storyboard in Resources */,
 				A8EF74C2212ACB71003B8E39 /* catmeow.wav in Resources */,

@@ -31,12 +31,26 @@ class TrainBank {
             TrainBank(titletrain: "Diam", trainImage: [UIImage(named: "stay_button_2.0")!])
         ]
     }
+    static func obedienceCatTrainData() -> [TrainBank]
+    {
+        return [
+            TrainBank(titletrain: "Duduk", trainImage: [UIImage(named: "stay_button_cat")!,UIImage(named: "guide_2")!]),
+            TrainBank(titletrain: "Datang", trainImage: [UIImage(named: "come_button_cat")!]),
+            TrainBank(titletrain: "Tangkap", trainImage: [UIImage(named: "fetch_button_2.0")!])
+        ]
+    }
     static func behavioralTrainData() -> [TrainBank]
     {
         return [
             TrainBank(titletrain: "Menggonggong Berlebihan", trainImage: [UIImage(named: "bark_button_2.0")!]),
             TrainBank(titletrain: "Mengunyah", trainImage: [UIImage(named: "chewing_button_2.0")!]),
             TrainBank(titletrain: "Memberantakan Rumah", trainImage: [UIImage(named: "breaking_rule_button_2.0")!])
+        ]
+    }
+    static func behavioralCatTrainData() -> [TrainBank]
+    {
+        return [
+            TrainBank(titletrain: "Mencakar Perabotan", trainImage: [UIImage(named: "breaking_rule_cat_button")!])
         ]
     }
 

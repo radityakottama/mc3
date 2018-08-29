@@ -11,6 +11,7 @@ import UIKit
 class MainMenuCatTrainingViewController: UIViewController   {
     //MARK: - Outlets2
     @IBOutlet var changePetView: UIView!
+    
     @IBOutlet weak var visualEffectView: UIVisualEffectView!
     @IBOutlet weak var obedienceTitleTrain: UILabel!
     @IBOutlet weak var behavioralTitleTrain: UILabel!
@@ -21,18 +22,18 @@ class MainMenuCatTrainingViewController: UIViewController   {
     //MARK: - Variable
     var effect:UIVisualEffect!
     var myIndex = 0
-    var obedienceTrain = TrainBank.obedienceTrainData()
-    var behavioralTrain = TrainBank.behavioralTrainData()
+    var obedienceTrain = TrainBank.obedienceCatTrainData()
+    var behavioralTrain = TrainBank.behavioralCatTrainData()
     
     var sendTitleTrainBank : String = ""
-    let cellScaling: CGFloat = 0.6
+    let cellScaling: CGFloat = 1.0
     
     
     //MARK: - Function Button
     @IBAction func changePet(_ sender: Any) {
         animateIn()
-        
     }
+    
     @IBAction func kucingJenisPeliharaanButton(_ sender: Any) {
         animateOut()
     }
@@ -72,12 +73,12 @@ class MainMenuCatTrainingViewController: UIViewController   {
         obedienceTitleTrain.font = UIFont(name: "KeepCalm-Medium", size: 17)
         behavioralTitleTrain.font = UIFont(name: "KeepCalm-Medium", size: 17)
         UIFont.fontNames(forFamilyName: "KeepCalm-Medium.ttf")
-        let screenSize = UIScreen.main.bounds.size
-        let layout = obedienceTrainCollection!.collectionViewLayout as!  UICollectionViewFlowLayout
-        obedienceTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 0.0)
         
-        let layout2 = behavioralTrainCollection!.collectionViewLayout as! UICollectionViewFlowLayout
-        behavioralTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 0.0)
+//                let layout = obedienceTrainCollection!.collectionViewLayout as!  UICollectionViewFlowLayout
+//                obedienceTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 0.0)
+//
+//                let layout2 = behavioralTrainCollection!.collectionViewLayout as! UICollectionViewFlowLayout
+//                behavioralTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 0.0)
         
         obedienceTrainCollection.dataSource = self
         behavioralTrainCollection.dataSource = self
@@ -86,7 +87,7 @@ class MainMenuCatTrainingViewController: UIViewController   {
         behavioralTrainCollection.delegate = self
         
     }
-
+    
 }
 
 extension MainMenuCatTrainingViewController: UICollectionViewDataSource, UICollectionViewDelegate {
@@ -110,7 +111,7 @@ extension MainMenuCatTrainingViewController: UICollectionViewDataSource, UIColle
         }
         else if collectionView == self.behavioralTrainCollection {
             
-        let cell = behavioralTrainCollection.dequeueReusableCell(withReuseIdentifier: "BehavioralTrainCell", for: indexPath) as! BehavioralCollectionViewCell
+            let cell = behavioralTrainCollection.dequeueReusableCell(withReuseIdentifier: "BehavioralTrainCell", for: indexPath) as! BehavioralCollectionViewCell
             cell.train1 = behavioralTrain[indexPath.item]
             return cell
         }
@@ -121,7 +122,7 @@ extension MainMenuCatTrainingViewController: UICollectionViewDataSource, UIColle
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
-     
+        
         if collectionView == self.obedienceTrainCollection {
             sendTitleTrainBank = obedienceTrain[indexPath.item].titletrain
             print("Ke Latihan")
@@ -131,8 +132,8 @@ extension MainMenuCatTrainingViewController: UICollectionViewDataSource, UIColle
             sendTitleTrainBank = KuisBank.behavioralTrainData()[indexPath.row][0]
             performSegue(withIdentifier: "toKuis", sender: self)
         }
+        performSegue(withIdentifier: "toTrain", sender: self)
         
-
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
