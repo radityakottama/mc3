@@ -80,8 +80,8 @@ class MainMenuCatTrainingViewController: UIViewController   {
 //                let layout2 = behavioralTrainCollection!.collectionViewLayout as! UICollectionViewFlowLayout
 //                behavioralTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 0.0)
         
-        obedienceTrainCollection?.dataSource = self
-        behavioralTrainCollection?.dataSource = self
+        obedienceTrainCollection.dataSource = self
+        behavioralTrainCollection.dataSource = self
         
         obedienceTrainCollection.delegate = self
         behavioralTrainCollection.delegate = self
@@ -125,9 +125,12 @@ extension MainMenuCatTrainingViewController: UICollectionViewDataSource, UIColle
         
         if collectionView == self.obedienceTrainCollection {
             sendTitleTrainBank = obedienceTrain[indexPath.item].titletrain
-            
+            print("Ke Latihan")
+            performSegue(withIdentifier: "toTrain", sender: self)
         }else if collectionView == self.behavioralTrainCollection {
-            sendTitleTrainBank = behavioralTrain[indexPath.item].titletrain
+            print("ke Kuis")
+            sendTitleTrainBank = KuisBank.behavioralTrainData()[indexPath.row][0]
+            performSegue(withIdentifier: "toKuis", sender: self)
         }
         performSegue(withIdentifier: "toTrain", sender: self)
         
@@ -137,6 +140,19 @@ extension MainMenuCatTrainingViewController: UICollectionViewDataSource, UIColle
         let destination = segue.destination as? InstructionSCENEViewController
         
         destination?.titleTrain = sendTitleTrainBank
-    }
-    
+        print("test")
+        
+        if let destination = segue.destination as? KuisViewController {
+            destination.titleTrain = sendTitleTrainBank
+        }
+    }    
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        
+//        let cell2 = behavioralTrainCollection.dequeueReusableCell(withReuseIdentifier: "BehavioralTrainCell", for: indexPath) as! BehavioralCollectionViewCell
+//        cell2.train1 = behavioralTrain[indexPath.item]
+//        
+//        
+//        return cell2
+//    }
+  
 }

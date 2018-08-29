@@ -50,7 +50,6 @@ class InstructionSCENEViewController: UIViewController, UIScrollViewDelegate {
     
     var titleTrain : String = ""
     var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
-    
     var images : [UIImage] = []
     var obedienceTrain = TrainBank.obedienceTrainData()
     var behavioralTrain = TrainBank.behavioralTrainData()

@@ -12,6 +12,7 @@ class TrainBank {
     // MARK: - Public API
     var titletrain = ""
     var trainImage: [UIImage]
+    
    
     
     init(titletrain: String, trainImage: [UIImage])
@@ -41,7 +42,7 @@ class TrainBank {
     static func behavioralTrainData() -> [TrainBank]
     {
         return [
-            TrainBank(titletrain: "Menggongong Berlebihan", trainImage: [UIImage(named: "bark_button_2.0")!]),
+            TrainBank(titletrain: "Menggonggong Berlebihan", trainImage: [UIImage(named: "bark_button_2.0")!]),
             TrainBank(titletrain: "Mengunyah", trainImage: [UIImage(named: "chewing_button_2.0")!]),
             TrainBank(titletrain: "Memberantakan Rumah", trainImage: [UIImage(named: "breaking_rule_button_2.0")!])
         ]

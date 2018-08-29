@@ -9,19 +9,29 @@
 /* Begin PBXBuildFile section */
 		A81207E9212FF9DB0017FDDB /* ClickerInfoSCENEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81207E8212FF9DB0017FDDB /* ClickerInfoSCENEViewController.swift */; };
 		A81207EB2133DC840017FDDB /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81207EA2133DC840017FDDB /* CircularTransition.swift */; };
-		A81207EE21353EC70017FDDB /* Clicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81207EC21353EC70017FDDB /* Clicker.storyboard */; };
 		A863CB092122B9790088EDB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A863CB082122B9790088EDB4 /* AppDelegate.swift */; };
 		A863CB0B2122B9790088EDB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A863CB0A2122B9790088EDB4 /* ViewController.swift */; };
 		A863CB112122B9790088EDB4 /* MC_3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A863CB0F2122B9790088EDB4 /* MC_3.xcdatamodeld */; };
 		A863CB132122B97D0088EDB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A863CB122122B97D0088EDB4 /* Assets.xcassets */; };
+<<<<<<< HEAD
+=======
 		A863CB162122B97D0088EDB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A863CB142122B97D0088EDB4 /* LaunchScreen.storyboard */; };
+		A8E152BD21355879003A5E28 /* Clicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E152BC21355879003A5E28 /* Clicker.storyboard */; };
+		A8E152BF21355C30003A5E28 /* KuisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E152BE21355C30003A5E28 /* KuisViewController.swift */; };
+		A8E152C121356655003A5E28 /* KuisBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E152C021356655003A5E28 /* KuisBank.swift */; };
+		A8E152C3213566AC003A5E28 /* Kuis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E152C2213566AC003A5E28 /* Kuis.swift */; };
+>>>>>>> e4dfa2c8b0fcba132052bd5615bce2e911756f55
 		A8EF74BE2129B15C003B8E39 /* GuideSCENEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF74BD2129B15C003B8E39 /* GuideSCENEViewController.swift */; };
 		A8EF74C0212AC703003B8E39 /* dogbark.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8EF74BF212AC703003B8E39 /* dogbark.wav */; };
 		A8EF74C2212ACB71003B8E39 /* catmeow.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8EF74C1212ACB71003B8E39 /* catmeow.wav */; };
 		A8EF74C5212BF3C2003B8E39 /* InstructionSCENEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF74C4212BF3C2003B8E39 /* InstructionSCENEViewController.swift */; };
 		A8EF74C7212BF5C1003B8E39 /* ClickerSCENEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF74C6212BF5C1003B8E39 /* ClickerSCENEViewController.swift */; };
 		A8EF74CB212C100B003B8E39 /* clickerfix2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8EF74CA212C100B003B8E39 /* clickerfix2.wav */; };
+<<<<<<< HEAD
 		F800554E21353E6C0048F0C9 /* Clicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F800554C21353E6C0048F0C9 /* Clicker.storyboard */; };
+		F806C05C2135A34D00CD3E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F806C05A2135A34D00CD3E9F /* LaunchScreen.storyboard */; };
+=======
+>>>>>>> e4dfa2c8b0fcba132052bd5615bce2e911756f55
 		F86E894A213442EC00963A4C /* MainMenuDogTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2347C212D6CFB009BF4AA /* MainMenuDogTrainingViewController.swift */; };
 		F86E894D2135348200963A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86E894B2135348200963A4C /* Main.storyboard */; };
 		F8E2347F212D6CFB009BF4AA /* ObedienceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2347B212D6CFA009BF4AA /* ObedienceCollectionViewCell.swift */; };
@@ -36,21 +46,27 @@
 /* Begin PBXFileReference section */
 		A81207E8212FF9DB0017FDDB /* ClickerInfoSCENEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerInfoSCENEViewController.swift; sourceTree = "<group>"; };
 		A81207EA2133DC840017FDDB /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
-		A81207ED21353EC70017FDDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "MC 3/Base.lproj/Clicker.storyboard"; sourceTree = "<group>"; };
 		A863CB052122B9790088EDB4 /* MC 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MC 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A863CB082122B9790088EDB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A863CB0A2122B9790088EDB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A863CB102122B9790088EDB4 /* MC_3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MC_3.xcdatamodel; sourceTree = "<group>"; };
 		A863CB122122B97D0088EDB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A863CB152122B97D0088EDB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A863CB172122B97D0088EDB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E152BC21355879003A5E28 /* Clicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Clicker.storyboard; sourceTree = "<group>"; };
+		A8E152BE21355C30003A5E28 /* KuisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuisViewController.swift; sourceTree = "<group>"; };
+		A8E152C021356655003A5E28 /* KuisBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KuisBank.swift; sourceTree = "<group>"; };
+		A8E152C2213566AC003A5E28 /* Kuis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kuis.swift; sourceTree = "<group>"; };
 		A8EF74BD2129B15C003B8E39 /* GuideSCENEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSCENEViewController.swift; sourceTree = "<group>"; };
 		A8EF74BF212AC703003B8E39 /* dogbark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dogbark.wav; sourceTree = "<group>"; };
 		A8EF74C1212ACB71003B8E39 /* catmeow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = catmeow.wav; sourceTree = "<group>"; };
 		A8EF74C4212BF3C2003B8E39 /* InstructionSCENEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionSCENEViewController.swift; sourceTree = "<group>"; };
 		A8EF74C6212BF5C1003B8E39 /* ClickerSCENEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerSCENEViewController.swift; sourceTree = "<group>"; };
 		A8EF74CA212C100B003B8E39 /* clickerfix2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clickerfix2.wav; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		F800554D21353E6C0048F0C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "MC 3/Base.lproj/Clicker.storyboard"; sourceTree = "<group>"; };
+		F806C05B2135A34D00CD3E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+=======
+>>>>>>> e4dfa2c8b0fcba132052bd5615bce2e911756f55
 		F86E894C2135348200963A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8E2347B212D6CFA009BF4AA /* ObedienceCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObedienceCollectionViewCell.swift; sourceTree = "<group>"; };
 		F8E2347C212D6CFB009BF4AA /* MainMenuDogTrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuDogTrainingViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +94,7 @@
 			children = (
 				A863CB072122B9790088EDB4 /* MC 3 */,
 				A863CB062122B9790088EDB4 /* Products */,
+				F8005550213542640048F0C9 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,30 +112,33 @@
 				F8E23486212D72AF009BF4AA /* Fonts */,
 				A8EF74C3212AD088003B8E39 /* Sound */,
 				A863CB082122B9790088EDB4 /* AppDelegate.swift */,
+				F8F9E7BA212EA7B8004570F1 /* Robot.storyboard */,
+				F86E894B2135348200963A4C /* Main.storyboard */,
 				A863CB0A2122B9790088EDB4 /* ViewController.swift */,
 				A8EF74BD2129B15C003B8E39 /* GuideSCENEViewController.swift */,
 				A8EF74C4212BF3C2003B8E39 /* InstructionSCENEViewController.swift */,
 				A8EF74C6212BF5C1003B8E39 /* ClickerSCENEViewController.swift */,
 				A81207E8212FF9DB0017FDDB /* ClickerInfoSCENEViewController.swift */,
-				F8F9E7BA212EA7B8004570F1 /* Robot.storyboard */,
-<<<<<<< .merge_file_shVTyX
-				F800554C21353E6C0048F0C9 /* Clicker.storyboard */,
-=======
-				A81207EC21353EC70017FDDB /* Clicker.storyboard */,
-				A863CB0C2122B9790088EDB4 /* Main.storyboard */,
->>>>>>> .merge_file_0SS45w
 				F8E2347E212D6CFB009BF4AA /* BehavioralCollectionViewCell.swift */,
-				F8E2347C212D6CFB009BF4AA /* MainMenuDogTrainingViewController.swift */,
 				F8F9E7BD2133A299004570F1 /* MainMenuCatTrainingViewController.swift */,
+				F8E2347C212D6CFB009BF4AA /* MainMenuDogTrainingViewController.swift */,
+				A8E152BE21355C30003A5E28 /* KuisViewController.swift */,
 				F8E2347B212D6CFA009BF4AA /* ObedienceCollectionViewCell.swift */,
+<<<<<<< HEAD
 				F86E894B2135348200963A4C /* Main.storyboard */,
+				F806C05A2135A34D00CD3E9F /* LaunchScreen.storyboard */,
+=======
+>>>>>>> e4dfa2c8b0fcba132052bd5615bce2e911756f55
 				F8E2347D212D6CFB009BF4AA /* TrainBank.swift */,
+				A8E152C2213566AC003A5E28 /* Kuis.swift */,
+				A8E152C021356655003A5E28 /* KuisBank.swift */,
 				A81207EA2133DC840017FDDB /* CircularTransition.swift */,
 				A863CB122122B97D0088EDB4 /* Assets.xcassets */,
-				A863CB142122B97D0088EDB4 /* LaunchScreen.storyboard */,
+				F800554C21353E6C0048F0C9 /* Clicker.storyboard */,
 				A863CB172122B97D0088EDB4 /* Info.plist */,
 				A863CB0F2122B9790088EDB4 /* MC_3.xcdatamodeld */,
 				F8F9E7B8212E89DA004570F1 /* RobotViewController.swift */,
+				A8E152BC21355879003A5E28 /* Clicker.storyboard */,
 			);
 			path = "MC 3";
 			sourceTree = "<group>";
@@ -131,6 +151,13 @@
 				A8EF74CA212C100B003B8E39 /* clickerfix2.wav */,
 			);
 			path = Sound;
+			sourceTree = "<group>";
+		};
+		F8005550213542640048F0C9 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		F8E23486212D72AF009BF4AA /* Fonts */ = {
@@ -199,20 +226,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F806C05C2135A34D00CD3E9F /* LaunchScreen.storyboard in Resources */,
 				F8E23488212D9234009BF4AA /* KeepCalm-Medium.ttf in Resources */,
-				A863CB162122B97D0088EDB4 /* LaunchScreen.storyboard in Resources */,
 				A8EF74CB212C100B003B8E39 /* clickerfix2.wav in Resources */,
 				F86E894D2135348200963A4C /* Main.storyboard in Resources */,
 				A8EF74C2212ACB71003B8E39 /* catmeow.wav in Resources */,
 				A8EF74C0212AC703003B8E39 /* dogbark.wav in Resources */,
 				F8F9E7BC212EA7B8004570F1 /* Robot.storyboard in Resources */,
-				F800554E21353E6C0048F0C9 /* Clicker.storyboard in Resources */,
+				A8E152BD21355879003A5E28 /* Clicker.storyboard in Resources */,
 				A863CB132122B97D0088EDB4 /* Assets.xcassets in Resources */,
-<<<<<<< .merge_file_shVTyX
-=======
-				A81207EE21353EC70017FDDB /* Clicker.storyboard in Resources */,
-				A863CB0E2122B9790088EDB4 /* Main.storyboard in Resources */,
->>>>>>> .merge_file_0SS45w
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,14 +246,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A81207EB2133DC840017FDDB /* CircularTransition.swift in Sources */,
+				A8E152C121356655003A5E28 /* KuisBank.swift in Sources */,
 				F8F9E7B9212E89DA004570F1 /* RobotViewController.swift in Sources */,
 				F8E2347F212D6CFB009BF4AA /* ObedienceCollectionViewCell.swift in Sources */,
 				A8EF74BE2129B15C003B8E39 /* GuideSCENEViewController.swift in Sources */,
 				A863CB0B2122B9790088EDB4 /* ViewController.swift in Sources */,
 				A81207E9212FF9DB0017FDDB /* ClickerInfoSCENEViewController.swift in Sources */,
+				A8E152C3213566AC003A5E28 /* Kuis.swift in Sources */,
 				F8F9E7C02133DF93004570F1 /* MainMenuCatTrainingViewController.swift in Sources */,
 				A863CB092122B9790088EDB4 /* AppDelegate.swift in Sources */,
 				A863CB112122B9790088EDB4 /* MC_3.xcdatamodeld in Sources */,
+				A8E152BF21355C30003A5E28 /* KuisViewController.swift in Sources */,
 				F86E894A213442EC00963A4C /* MainMenuDogTrainingViewController.swift in Sources */,
 				A8EF74C7212BF5C1003B8E39 /* ClickerSCENEViewController.swift in Sources */,
 				F8E23482212D6CFB009BF4AA /* BehavioralCollectionViewCell.swift in Sources */,
@@ -243,26 +268,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-<<<<<<< .merge_file_shVTyX
-		A863CB142122B97D0088EDB4 /* LaunchScreen.storyboard */ = {
-=======
-		A81207EC21353EC70017FDDB /* Clicker.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A81207ED21353EC70017FDDB /* Base */,
-			);
-			name = Clicker.storyboard;
-			sourceTree = "<group>";
-		};
-		A863CB0C2122B9790088EDB4 /* Main.storyboard */ = {
->>>>>>> .merge_file_0SS45w
-			isa = PBXVariantGroup;
-			children = (
-				A863CB152122B97D0088EDB4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		F800554C21353E6C0048F0C9 /* Clicker.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -271,6 +276,17 @@
 			name = Clicker.storyboard;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+		F806C05A2135A34D00CD3E9F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F806C05B2135A34D00CD3E9F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+=======
+>>>>>>> e4dfa2c8b0fcba132052bd5615bce2e911756f55
 		F86E894B2135348200963A4C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -409,7 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9TDAR667HU;
+				DEVELOPMENT_TEAM = 97Q8SG266P;
 				INFOPLIST_FILE = "MC 3/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -428,7 +444,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9TDAR667HU;
+				DEVELOPMENT_TEAM = 97Q8SG266P;
 				INFOPLIST_FILE = "MC 3/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
