@@ -201,7 +201,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.96862745098039216" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-fA-Dw1">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-fA-Dw1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
@@ -262,7 +262,7 @@
                                 <rect key="frame" x="-1" y="387" width="377" height="38"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERILAKU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1TG-Os-LHg">
-                                        <rect key="frame" x="20" y="9" width="82" height="21"/>
+                                        <rect key="frame" x="20" y="9" width="92" height="21"/>
                                         <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -296,7 +296,7 @@
                                                     <rect key="frame" x="-29" y="-51" width="218" height="226"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTx-rp-KHE">
-                                                    <rect key="frame" x="9" y="139.33333333333334" width="142" height="17.666666666666657"/>
+                                                    <rect key="frame" x="9" y="139.33333333333334" width="142" height="18"/>
                                                     <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
                                                     <color key="textColor" red="0.43529411759999997" green="0.32549019610000002" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -322,7 +322,7 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PELATIHAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NZ-mA-DAm">
-                                <rect key="frame" x="97" y="87" width="180" height="41"/>
+                                <rect key="frame" x="83.000000000000014" y="87" width="208.33333333333337" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="6RX-x7-aVI"/>
                                 </constraints>
@@ -358,7 +358,7 @@
                                 <rect key="frame" x="-1" y="170" width="376" height="38"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEPATUHAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tc7-0w-9IW">
-                                        <rect key="frame" x="20" y="9" width="99" height="21"/>
+                                        <rect key="frame" x="20" y="9" width="113" height="21"/>
                                         <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
                                         <color key="textColor" red="0.43529411759999997" green="0.32549019610000002" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -410,7 +410,7 @@
                                                     <rect key="frame" x="-29" y="-51" width="218" height="238"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMc-dK-NG1" userLabel="Title Train">
-                                                    <rect key="frame" x="9" y="149.33333333333334" width="142" height="17.666666666666657"/>
+                                                    <rect key="frame" x="9" y="149.33333333333334" width="142" height="18"/>
                                                     <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
                                                     <color key="textColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -562,7 +562,7 @@
                                 <rect key="frame" x="-1" y="387" width="377" height="38"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERILAKU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i46-Jr-vth">
-                                        <rect key="frame" x="20" y="9" width="82" height="21"/>
+                                        <rect key="frame" x="20" y="9" width="92" height="21"/>
                                         <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
                                         <color key="textColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -596,7 +596,7 @@
                                                     <rect key="frame" x="-29" y="-51" width="218" height="226"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItL-mQ-Z7g">
-                                                    <rect key="frame" x="9" y="139.33333333333334" width="142" height="17.666666666666657"/>
+                                                    <rect key="frame" x="9" y="139.33333333333334" width="142" height="18"/>
                                                     <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
                                                     <color key="textColor" red="0.43529411759999997" green="0.32549019610000002" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -622,7 +622,7 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PELATIHAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbf-zO-Xrc">
-                                <rect key="frame" x="97" y="87" width="180" height="41"/>
+                                <rect key="frame" x="83.000000000000014" y="87" width="208.33333333333337" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="d6C-im-YHx"/>
                                 </constraints>
@@ -658,7 +658,7 @@
                                 <rect key="frame" x="-1" y="170" width="376" height="38"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KEPATUHAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgk-KM-2Iu">
-                                        <rect key="frame" x="20" y="9" width="99" height="21"/>
+                                        <rect key="frame" x="20" y="9" width="113" height="21"/>
                                         <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
                                         <color key="textColor" red="0.43529411759999997" green="0.32549019610000002" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -710,7 +710,7 @@
                                                     <rect key="frame" x="-29" y="-51" width="218" height="238"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoU-dL-bBY" userLabel="Title Train">
-                                                    <rect key="frame" x="9" y="149.33333333333334" width="142" height="17.666666666666657"/>
+                                                    <rect key="frame" x="9" y="149.33333333333334" width="142" height="18"/>
                                                     <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="15"/>
                                                     <color key="textColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -786,7 +786,8 @@
                         <outlet property="obedienceTitleTrain" destination="Rgk-KM-2Iu" id="MEf-Kc-seh"/>
                         <outlet property="obedienceTrainCollection" destination="r0F-qV-Uyv" id="O0C-Fy-lFy"/>
                         <outlet property="visualEffectView" destination="xWm-86-05u" id="MiG-wc-ldK"/>
-                        <segue destination="8EX-zO-zkZ" kind="show" identifier="toTrain" id="oDs-oS-xoe"/>
+                        <segue destination="8EX-zO-zkZ" kind="show" identifier="toTrain" id="vNw-Zb-yOf"/>
+                        <segue destination="IA3-YL-6b4" kind="show" identifier="toKuis" id="h4b-Dc-UKT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hsV-G0-z5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -984,10 +985,11 @@
         <image name="title" width="4462" height="3426"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="V3x-Zx-w8D"/>
-        <segue reference="c10-88-wT8"/>
+        <segue reference="Vuw-de-A2U"/>
+        <segue reference="uHS-2A-3cs"/>
+        <segue reference="h4b-Dc-UKT"/>
         <segue reference="cam-wb-mHf"/>
-        <segue reference="sWI-v3-87k"/>
-        <segue reference="If2-R6-lHG"/>
+        <segue reference="Quh-wp-sqX"/>
+        <segue reference="vNw-Zb-yOf"/>
     </inferredMetricsTieBreakers>
 </document>

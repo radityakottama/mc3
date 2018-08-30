@@ -10,10 +10,19 @@ import UIKit
 import AVFoundation
 
 class InstructionSCENEViewController: UIViewController, UIScrollViewDelegate {
+    
+    var kucingInd = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         chosenAnimal = UserDefaults.standard.value(forKey: "chosenAnimal") as! String
+        
+        
+        if(kucingInd == 1){
+            obedienceTrain = TrainBank.obedienceCatTrainData()
+            behavioralTrain = TrainBank.behavioralCatTrainData()
+        }
+        
         for train in obedienceTrain {
             if train.titletrain == self.titleTrain{
                 images = train.trainImage

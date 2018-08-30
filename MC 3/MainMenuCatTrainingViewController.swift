@@ -133,16 +133,16 @@ extension MainMenuCatTrainingViewController: UICollectionViewDataSource, UIColle
             performSegue(withIdentifier: "toTrain", sender: self)
         }else if collectionView == self.behavioralTrainCollection {
             print("ke Kuis")
-            sendTitleTrainBank = KuisBank.behavioralTrainData()[indexPath.row][0]
+            sendTitleTrainBank = behavioralTrain[indexPath.item].titletrain
             performSegue(withIdentifier: "toKuis", sender: self)
         }
-        performSegue(withIdentifier: "toTrain", sender: self)
+        
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as? InstructionSCENEViewController
-        
+        destination?.kucingInd = 1
         destination?.titleTrain = sendTitleTrainBank
         print("test")
         
