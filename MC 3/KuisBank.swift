@@ -51,5 +51,18 @@ class KuisBank {
                 ["Sebaiknya memberikan makanan sesuai jam makan yang telah ditentukan.", "Berikan pakan dengan menjadwalkan jam makan anjing anda secara konsisten. Beri makan anjing Anda pada waktu yang sama setiap hari dan bawa pergi mangkuk mereka di antara waktu makan.", "benar"]
                 
         ]
+        
+    
     }
+    
+    static func behavioralTrainCatMencakar() -> [[String]]{
+        return
+            [
+                ["Still in progress", "Still in progress", "benar"]
+                
+        ]
+        
+        
+    }
+    
 }

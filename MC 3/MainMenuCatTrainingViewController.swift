@@ -74,11 +74,11 @@ class MainMenuCatTrainingViewController: UIViewController   {
         behavioralTitleTrain.font = UIFont(name: "KeepCalm-Medium", size: 17)
         UIFont.fontNames(forFamilyName: "KeepCalm-Medium.ttf")
         
-//                let layout = obedienceTrainCollection!.collectionViewLayout as!  UICollectionViewFlowLayout
-//                obedienceTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 0.0)
-//
-//                let layout2 = behavioralTrainCollection!.collectionViewLayout as! UICollectionViewFlowLayout
-//                behavioralTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 0.0)
+                let layout = obedienceTrainCollection!.collectionViewLayout as!  UICollectionViewFlowLayout
+                obedienceTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 0.0)
+
+                let layout2 = behavioralTrainCollection!.collectionViewLayout as! UICollectionViewFlowLayout
+                behavioralTrainCollection.backgroundColor = UIColor(displayP3Red: 111/255, green: 83/255, blue: 54/255, alpha: 0.0)
         
         obedienceTrainCollection.dataSource = self
         behavioralTrainCollection.dataSource = self
@@ -129,16 +129,16 @@ extension MainMenuCatTrainingViewController: UICollectionViewDataSource, UIColle
             performSegue(withIdentifier: "toTrain", sender: self)
         }else if collectionView == self.behavioralTrainCollection {
             print("ke Kuis")
-            sendTitleTrainBank = KuisBank.behavioralTrainData()[indexPath.row][0]
+            sendTitleTrainBank = behavioralTrain[indexPath.item].titletrain
             performSegue(withIdentifier: "toKuis", sender: self)
         }
-        performSegue(withIdentifier: "toTrain", sender: self)
+        
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as? InstructionSCENEViewController
-        
+        destination?.kucingInd = 1
         destination?.titleTrain = sendTitleTrainBank
         print("test")
         

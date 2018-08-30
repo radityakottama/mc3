@@ -34,9 +34,9 @@ class TrainBank {
     static func obedienceCatTrainData() -> [TrainBank]
     {
         return [
-            TrainBank(titletrain: "Duduk", trainImage: [UIImage(named: "stay_button_cat")!,UIImage(named: "guide_2")!]),
-            TrainBank(titletrain: "Datang", trainImage: [UIImage(named: "come_button_cat")!]),
-            TrainBank(titletrain: "Tangkap", trainImage: [UIImage(named: "fetch_button_2.0")!])
+            TrainBank(titletrain: "Duduk", trainImage: [UIImage(named: "stay_button_cat")!,UIImage(named: "duduk_kucing_1")!,UIImage(named: "duduk_kucing_2")!,UIImage(named: "duduk_kucing_3")!,UIImage(named: "duduk_kucing_4")!]),
+            TrainBank(titletrain: "Datang", trainImage: [UIImage(named: "come_button_cat")!, UIImage(named: "datang_kucing_1")!, UIImage(named: "datang_kucing_2")!, UIImage(named: "datang_kucing_3")!, UIImage(named: "datang_kucing_4")!]),
+            TrainBank(titletrain: "Tangkap", trainImage: [UIImage(named: "fetch_button_2.0")!, UIImage(named: "tangkap_kucing_1")!, UIImage(named: "tangkap_kucing_2")!, UIImage(named: "tangkap_kucing_3")!, UIImage(named: "tangkap_kucing_4")!])
         ]
     }
     static func behavioralTrainData() -> [TrainBank]

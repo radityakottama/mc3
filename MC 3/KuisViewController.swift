@@ -23,7 +23,8 @@ class KuisViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(titleTrain)
+        
         if(titleTrain == "Menggonggong Berlebihan"){
             tempKuis = KuisBank.behavioralTrainData()
         }else if(titleTrain == "Mengunyah"){
@@ -31,6 +32,8 @@ class KuisViewController: UIViewController {
         }
         else if(titleTrain == "Memberantakan Rumah"){
             tempKuis = KuisBank.behavioralTrainDataBerantakan()
+        }else if(titleTrain == "Mencakar Perabotan"){
+            tempKuis = KuisBank.behavioralTrainCatMencakar()
         }
         
         questionLabel.text = tempKuis[penampung][0]
