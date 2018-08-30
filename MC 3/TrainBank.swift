@@ -25,10 +25,10 @@ class TrainBank {
     static func obedienceTrainData() -> [TrainBank]
     {
         return [
-            TrainBank(titletrain: "Duduk", trainImage: [UIImage(named: "sit_button_2.0")!,UIImage(named: "guide_2")!]),
-            TrainBank(titletrain: "Berbaring", trainImage: [UIImage(named: "down_button_2.0")!,UIImage(named: "guide_1")!]),
-            TrainBank(titletrain: "Datang", trainImage: [UIImage(named: "come_button_2.0")!]),
-            TrainBank(titletrain: "Diam", trainImage: [UIImage(named: "stay_button_2.0")!])
+            TrainBank(titletrain: "Duduk", trainImage: [UIImage(named: "sit_button_2.0")!, UIImage(named: "duduk_1")!, UIImage(named: "duduk_2")!, UIImage(named: "duduk_3")!, UIImage(named: "duduk_4")!]),
+            TrainBank(titletrain: "Berbaring", trainImage: [UIImage(named: "down_button_2.0")!, UIImage(named: "berbaring_1")!, UIImage(named: "berbaring_2")!, UIImage(named: "berbaring_3")!, UIImage(named: "berbaring_4")!]),
+            TrainBank(titletrain: "Datang", trainImage: [UIImage(named: "come_button_2.0")!, UIImage(named: "datang_1")!, UIImage(named: "datang_2")!, UIImage(named: "datang_3")!]),
+            TrainBank(titletrain: "Diam", trainImage: [UIImage(named: "stay_button_2.0")!, UIImage(named: "diam_1")!, UIImage(named: "diam_2")!, UIImage(named: "diam_3")!, UIImage(named: "diam_4")!])
         ]
     }
     static func obedienceCatTrainData() -> [TrainBank]

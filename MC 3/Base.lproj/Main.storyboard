@@ -25,37 +25,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Background_Filter" translatesAutoresizingMaskIntoConstraints="NO" id="yhC-ky-Jj1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background_Filter" translatesAutoresizingMaskIntoConstraints="NO" id="yhC-ky-Jj1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <color key="backgroundColor" red="1" green="0.98057058569251121" blue="0.89578288418887597" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kx2-s5-1hh">
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kx2-s5-1hh">
                                 <rect key="frame" x="105" y="669" width="165" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="9Ia-8h-ccm"/>
+                                </constraints>
                                 <state key="normal" image="start_button"/>
                                 <connections>
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Meq-Q4-gbL"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="xY3-qx-Isp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="xY3-qx-Isp">
                                 <rect key="frame" x="44" y="224" width="128" height="170"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="ifq-JE-cde">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="ifq-JE-cde">
                                 <rect key="frame" x="211" y="224" width="128" height="170"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGw-Na-opa">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGw-Na-opa">
                                 <rect key="frame" x="61" y="224" width="94" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="eNt-Jn-BUN"/>
+                                </constraints>
                                 <connections>
                                     <action selector="dogButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wOx-mU-TSV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgv-KM-vyC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sgv-KM-vyC">
                                 <rect key="frame" x="211" y="252" width="128" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="USo-MV-rnb"/>
+                                </constraints>
                                 <connections>
                                     <action selector="catButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4vg-xx-y7v"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="DNg-Q4-NjB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="DNg-Q4-NjB">
                                 <rect key="frame" x="16" y="86" width="343" height="138"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pilih jenis peliharaanmu." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nye-tC-4Ha">
@@ -70,15 +78,34 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.96862745100000003" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="xY3-qx-Isp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="2HQ-js-Ggy"/>
                             <constraint firstItem="Nye-tC-4Ha" firstAttribute="centerX" secondItem="DNg-Q4-NjB" secondAttribute="centerX" id="5lu-dv-Ytr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kx2-s5-1hh" secondAttribute="bottom" constant="36" id="86a-5T-0gC"/>
+                            <constraint firstItem="ifq-JE-cde" firstAttribute="leading" secondItem="xY3-qx-Isp" secondAttribute="trailing" constant="39" id="LiI-i0-K2j"/>
+                            <constraint firstItem="xY3-qx-Isp" firstAttribute="centerX" secondItem="GGw-Na-opa" secondAttribute="centerX" id="Mcg-1u-TL1"/>
+                            <constraint firstItem="xY3-qx-Isp" firstAttribute="top" secondItem="GGw-Na-opa" secondAttribute="top" id="OIZ-xM-BNN"/>
+                            <constraint firstAttribute="bottom" secondItem="yhC-ky-Jj1" secondAttribute="bottom" id="OUy-Rd-izb"/>
                             <constraint firstItem="Nye-tC-4Ha" firstAttribute="top" secondItem="xY3-qx-Isp" secondAttribute="bottom" constant="8" symbolic="YES" id="UAd-Zk-Kqr"/>
+                            <constraint firstItem="GGw-Na-opa" firstAttribute="top" secondItem="ifq-JE-cde" secondAttribute="top" id="VmO-I0-wzy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ifq-JE-cde" secondAttribute="trailing" constant="36" id="Wob-FZ-rtF"/>
+                            <constraint firstItem="DNg-Q4-NjB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="X0c-cl-t97"/>
+                            <constraint firstItem="GGw-Na-opa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="b6h-Rk-EAj"/>
+                            <constraint firstItem="DNg-Q4-NjB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="d3W-U9-WYw"/>
+                            <constraint firstItem="xY3-qx-Isp" firstAttribute="top" secondItem="DNg-Q4-NjB" secondAttribute="bottom" id="dwc-cA-QYv"/>
+                            <constraint firstItem="Sgv-KM-vyC" firstAttribute="top" secondItem="DNg-Q4-NjB" secondAttribute="bottom" constant="28" id="fzB-2U-L2L"/>
                             <constraint firstItem="Nye-tC-4Ha" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="iHY-CI-ZQb"/>
                             <constraint firstItem="Nye-tC-4Ha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jv2-Dq-iOn"/>
+                            <constraint firstItem="yhC-ky-Jj1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mAM-yA-slx"/>
+                            <constraint firstItem="ifq-JE-cde" firstAttribute="leading" secondItem="Sgv-KM-vyC" secondAttribute="leading" id="r3K-M0-7Ie"/>
+                            <constraint firstItem="kx2-s5-1hh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="s4S-wf-1vK"/>
                             <constraint firstItem="Nye-tC-4Ha" firstAttribute="top" secondItem="ifq-JE-cde" secondAttribute="bottom" constant="8" symbolic="YES" id="trh-t6-Lkd"/>
+                            <constraint firstItem="Nye-tC-4Ha" firstAttribute="top" secondItem="Sgv-KM-vyC" secondAttribute="bottom" constant="31" id="x4Y-Sy-MwE"/>
                             <constraint firstItem="Nye-tC-4Ha" firstAttribute="centerX" secondItem="yhC-ky-Jj1" secondAttribute="centerX" id="y3O-hE-2qy"/>
+                            <constraint firstItem="yhC-ky-Jj1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yQj-nd-YSB"/>
                             <constraint firstItem="Nye-tC-4Ha" firstAttribute="centerX" secondItem="kx2-s5-1hh" secondAttribute="centerX" id="ySH-wq-uU5"/>
                             <constraint firstItem="Nye-tC-4Ha" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="402" id="ybu-Gv-Cn2"/>
                             <constraint firstItem="Nye-tC-4Ha" firstAttribute="top" secondItem="GGw-Na-opa" secondAttribute="bottom" constant="8" symbolic="YES" id="ydN-nQ-eHH"/>
+                            <constraint firstItem="ifq-JE-cde" firstAttribute="trailing" secondItem="Sgv-KM-vyC" secondAttribute="trailing" id="zPD-LN-a6X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -118,20 +145,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sS-vM-BWr">
-                                <rect key="frame" x="16" y="748" width="40" height="30"/>
+                                <rect key="frame" x="11" y="748" width="53" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
                                 <state key="normal" title="BACK">
-                                    <color key="titleColor" red="1" green="0.7453954576857249" blue="0.49047896234563593" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.41960784309999999" green="0.3294117647" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="LB1-9G-3Wt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTk-Hx-IRz">
-                                <rect key="frame" x="320" y="748" width="39" height="30"/>
+                                <rect key="frame" x="316" y="748" width="50" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
                                 <state key="normal" title="NEXT">
-                                    <color key="titleColor" red="1" green="0.74539545770000004" blue="0.49047896229999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.41960784309999999" green="0.3294117647" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="i1B-ew-HOc" kind="show" id="Quh-wp-sqX"/>
@@ -140,12 +169,15 @@
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hvY-UL-Ay4">
                                 <rect key="frame" x="168" y="741" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="0.41960784309999999" green="0.3294117647" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hJs-uF-5o8"/>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="uTk-Hx-IRz" id="otP-JB-ZdG"/>
                         <outlet property="pageControl" destination="hvY-UL-Ay4" id="RPx-Pe-vpk"/>
                         <outlet property="scrollView" destination="ikh-cJ-vmg" id="wiN-ci-bfR"/>
                     </connections>
@@ -167,36 +199,49 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.96862745098039216" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="2dC-IN-IE5">
-                                <rect key="frame" x="168" y="741" width="39" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wnq-fA-Dw1">
-                                <rect key="frame" x="0.0" y="44" width="375" height="689"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJy-ZO-bym">
-                                <rect key="frame" x="19" y="748" width="40" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiN-TQ-egz">
+                                <rect key="frame" x="280" y="694" width="79" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="clicker_guguk"/>
+                                <connections>
+                                    <action selector="clickerButton:" destination="8EX-zO-zkZ" eventType="touchDown" id="9nF-S2-ODh"/>
+                                    <action selector="clickerButtonClicked:" destination="8EX-zO-zkZ" eventType="touchUpInside" id="WHd-xY-Emm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJy-ZO-bym">
+                                <rect key="frame" x="16" y="740" width="53" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
                                 <state key="normal" title="BACK">
-                                    <color key="titleColor" red="0.92549019607843142" green="0.72156862745098038" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.41960784313725491" green="0.32941176470588235" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="i1B-ew-HOc" kind="show" id="ZGW-bx-OtV"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="2dC-IN-IE5">
+                                <rect key="frame" x="168" y="736" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="0.41960784309999999" green="0.3294117647" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="kAn-XK-M8O"/>
                     </view>
                     <connections>
+                        <outlet property="clickerButton" destination="JiN-TQ-egz" id="ayT-sQ-4Pf"/>
                         <outlet property="pageControl" destination="2dC-IN-IE5" id="3DK-58-rmh"/>
                         <outlet property="scrollView" destination="Wnq-fA-Dw1" id="5ZD-PV-gib"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edm-Ul-H8Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16470" y="-661"/>
+            <point key="canvasLocation" x="16469.599999999999" y="-661.33004926108379"/>
         </scene>
         <!--Dog Training-->
         <scene sceneID="3tA-uw-pZo">
@@ -557,7 +602,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="i1B-ew-HOc" kind="show" identifier="toTrain" id="pRO-Ew-6Vd"/>
+                                    <action selector="backButton:" destination="IA3-YL-6b4" eventType="touchUpInside" id="2hA-P3-tmU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Penjelasan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGw-dx-RkH">
@@ -578,10 +623,6 @@
                                     <action selector="nextButtonAction:" destination="IA3-YL-6b4" eventType="touchUpInside" id="XVe-uQ-Sns"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="qVk-ig-IRU">
-                                <rect key="frame" x="107" y="320" width="164" height="123"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jawaban anda kurang tepat!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYb-34-nhn">
                                 <rect key="frame" x="66" y="183" width="245" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -601,6 +642,10 @@
                                     <action selector="salahButton:" destination="IA3-YL-6b4" eventType="touchUpInside" id="V5k-xQ-gjL"/>
                                 </connections>
                             </button>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="qVk-ig-IRU">
+                                <rect key="frame" x="107" y="245" width="164" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.58431372549019611" green="0.58431372549019611" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="VEw-Jb-tmu"/>
@@ -615,6 +660,7 @@
                         <outlet property="penjelasanLabel" destination="qGw-dx-RkH" id="epl-g5-LBg"/>
                         <outlet property="questionLabel" destination="BTd-Q0-c5h" id="Sgu-SR-Ga9"/>
                         <outlet property="salahButton" destination="DgG-NS-RKw" id="Tmo-WV-ONd"/>
+                        <segue destination="i1B-ew-HOc" kind="show" identifier="toTrain" id="a0X-z2-jJR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngf-1J-uV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -928,6 +974,7 @@
         <image name="blur" width="1125" height="2436"/>
         <image name="cat" width="282" height="267"/>
         <image name="check" width="507" height="432"/>
+        <image name="clicker_guguk" width="2000" height="2000"/>
         <image name="dog" width="194" height="341"/>
         <image name="paw" width="2500" height="2500"/>
         <image name="paw_2" width="747" height="747"/>
@@ -935,8 +982,8 @@
         <image name="title" width="4462" height="3426"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="O54-hb-ymx"/>
-        <segue reference="1MY-n0-PgB"/>
-        <segue reference="6Uc-s8-2Tv"/>
+        <segue reference="V3x-Zx-w8D"/>
+        <segue reference="c10-88-wT8"/>
+        <segue reference="a0X-z2-jJR"/>
     </inferredMetricsTieBreakers>
 </document>

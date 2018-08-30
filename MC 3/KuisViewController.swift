@@ -120,6 +120,22 @@ class KuisViewController: UIViewController {
         
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        penampung -= 1
+        checkImage.isHidden = true
+        blurImage.isHidden = true
+        infoJawaban.isHidden = true
+        questionLabel.isHidden = false
+        if  penampung < 0{
+            performSegue(withIdentifier: "toTrain", sender: self)
+        }else{
+            questionLabel.text = tempKuis[penampung][0]
+            penjelasanLabel.isHidden = true
+            nextButton.isHidden = true
+            benarButton.isHidden = false
+            salahButton.isHidden = false
+        }
+    }
     
     
     override func didReceiveMemoryWarning() {
