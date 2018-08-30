@@ -225,21 +225,37 @@
                                 <color key="textColor" red="0.99607843137254903" green="0.97254901960784312" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1Q-cT-FaM">
-                                <rect key="frame" x="120" y="304" width="68" height="30"/>
-                                <state key="normal" title="Backward"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1Q-cT-FaM">
+                                <rect key="frame" x="113" y="274" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ksR-Hx-khm"/>
+                                    <constraint firstAttribute="width" constant="80" id="yjv-Om-K53"/>
+                                </constraints>
+                                <state key="normal" title="Backward" image="panah bawah"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vul-zg-UB2">
-                                <rect key="frame" x="225" y="253" width="36" height="30"/>
-                                <state key="normal" title="Right"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vul-zg-UB2">
+                                <rect key="frame" x="181" y="234" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="57c-Qv-sco"/>
+                                    <constraint firstAttribute="height" constant="80" id="V2E-PA-6I6"/>
+                                </constraints>
+                                <state key="normal" title="Right" image="panah kanan"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wej-mf-AgS">
-                                <rect key="frame" x="126" y="206" width="56" height="30"/>
-                                <state key="normal" title="Forward"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wej-mf-AgS">
+                                <rect key="frame" x="113" y="194" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="BSU-Qk-cFh"/>
+                                    <constraint firstAttribute="width" constant="80" id="TZX-eN-dxw"/>
+                                </constraints>
+                                <state key="normal" title="Forward" image="panah atas"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Uj-Au-jdj">
-                                <rect key="frame" x="62" y="253" width="30" height="30"/>
-                                <state key="normal" title="Left"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Uj-Au-jdj">
+                                <rect key="frame" x="46" y="234" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9Ms-ql-ZJr"/>
+                                    <constraint firstAttribute="width" constant="80" id="qlt-fV-LXM"/>
+                                </constraints>
+                                <state key="normal" title="Left" image="panah kiri"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHQ-HS-eSA">
                                 <rect key="frame" x="633" y="284" width="70" height="70"/>
@@ -299,24 +315,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="t1Q-cT-FaM" secondAttribute="trailing" constant="580" id="0j0-Gw-SSn"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="t1Q-cT-FaM" secondAttribute="trailing" constant="575" id="0j0-Gw-SSn"/>
                             <constraint firstItem="oHQ-HS-eSA" firstAttribute="bottom" secondItem="TeP-BP-hcj" secondAttribute="bottom" id="0y2-0j-xwo"/>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="wej-mf-AgS" secondAttribute="trailing" constant="586" id="42U-JU-HdL"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="wej-mf-AgS" secondAttribute="trailing" constant="575" id="42U-JU-HdL"/>
                             <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="vul-zg-UB2" secondAttribute="trailing" constant="507" id="7LT-x2-4Y8"/>
                             <constraint firstItem="oHQ-HS-eSA" firstAttribute="top" secondItem="ZuB-VZ-vnr" secondAttribute="bottom" constant="18" id="8hP-PF-y7w"/>
                             <constraint firstItem="ZuB-VZ-vnr" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="661" id="AzK-q0-kaE"/>
-                            <constraint firstItem="vul-zg-UB2" firstAttribute="leading" secondItem="1Uj-Au-jdj" secondAttribute="trailing" constant="133" id="BSk-43-Tmh"/>
+                            <constraint firstItem="vul-zg-UB2" firstAttribute="leading" secondItem="1Uj-Au-jdj" secondAttribute="trailing" constant="55" id="BSk-43-Tmh"/>
                             <constraint firstItem="pqp-Lv-0NL" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="18" id="DHn-Us-Jcn"/>
                             <constraint firstItem="oHQ-HS-eSA" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="589" id="E82-fr-m80"/>
                             <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="WTB-n5-RFL" secondAttribute="trailing" constant="-7" id="EiM-ve-1is"/>
-                            <constraint firstItem="t1Q-cT-FaM" firstAttribute="top" secondItem="wej-mf-AgS" secondAttribute="bottom" constant="68" id="Fqc-Wd-QyA"/>
+                            <constraint firstItem="t1Q-cT-FaM" firstAttribute="top" secondItem="wej-mf-AgS" secondAttribute="bottom" id="Fqc-Wd-QyA"/>
                             <constraint firstItem="pqp-Lv-0NL" firstAttribute="top" secondItem="TeP-BP-hcj" secondAttribute="top" constant="20" id="G0e-jf-5Zo"/>
                             <constraint firstItem="WTB-n5-RFL" firstAttribute="top" secondItem="TeP-BP-hcj" secondAttribute="top" constant="10" id="Hmw-QD-flS"/>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="bottom" secondItem="1Uj-Au-jdj" secondAttribute="bottom" constant="71" id="IBc-ER-drO"/>
-                            <constraint firstItem="t1Q-cT-FaM" firstAttribute="bottom" secondItem="TeP-BP-hcj" secondAttribute="bottom" constant="-20" id="Pw8-tD-I54"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="bottom" secondItem="1Uj-Au-jdj" secondAttribute="bottom" constant="40" id="IBc-ER-drO"/>
+                            <constraint firstItem="t1Q-cT-FaM" firstAttribute="bottom" secondItem="TeP-BP-hcj" secondAttribute="bottom" id="Pw8-tD-I54"/>
                             <constraint firstItem="ZuB-VZ-vnr" firstAttribute="top" secondItem="bKD-Mc-adY" secondAttribute="bottom" constant="-158" id="VTv-Zw-c38"/>
                             <constraint firstItem="bKD-Mc-adY" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="484" id="WyB-x1-ttf"/>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="bottom" secondItem="vul-zg-UB2" secondAttribute="bottom" constant="71" id="fAf-Dc-Wr8"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="bottom" secondItem="vul-zg-UB2" secondAttribute="bottom" constant="40" id="fAf-Dc-Wr8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TeP-BP-hcj"/>
                     </view>
@@ -354,6 +370,10 @@
         <image name="Mic Button-1" width="2000" height="2000"/>
         <image name="dog play button-1" width="2000" height="2000"/>
         <image name="exit button 2.0" width="2000" height="2000"/>
+        <image name="panah atas" width="2000" height="2000"/>
+        <image name="panah bawah" width="2000" height="2000"/>
+        <image name="panah kanan" width="2000" height="2000"/>
+        <image name="panah kiri" width="2000" height="2000"/>
         <image name="wifi button" width="2000" height="2000"/>
     </resources>
 </document>

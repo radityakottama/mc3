@@ -24,8 +24,8 @@ class MainMenuCatTrainingViewController: UIViewController   {
     var myIndex = 0
     var obedienceTrain = TrainBank.obedienceCatTrainData()
     var behavioralTrain = TrainBank.behavioralCatTrainData()
-    
     var sendTitleTrainBank : String = ""
+    var chosenAnimal:String = ""
     let cellScaling: CGFloat = 1.0
     
     
@@ -34,6 +34,10 @@ class MainMenuCatTrainingViewController: UIViewController   {
         animateIn()
     }
     
+    @IBAction func anjingJenisPeliharaanButton(_ sender: Any) {
+        chosenAnimal = "Dog"
+        UserDefaults.standard.set(chosenAnimal, forKey: "chosenAnimal")
+    }
     @IBAction func kucingJenisPeliharaanButton(_ sender: Any) {
         animateOut()
     }

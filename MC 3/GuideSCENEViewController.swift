@@ -13,7 +13,7 @@ class GuideSCENEViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        chosenAnimal = UserDefaults.standard.value(forKey: "chosenAnimal") as! String
         
         for index in 0..<images.count{
             
@@ -43,7 +43,7 @@ class GuideSCENEViewController: UIViewController, UIScrollViewDelegate {
     
     var images: [String] = ["guide_1","guide_2","guide_3"]
     var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
-   
+    var chosenAnimal : String!
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
@@ -52,6 +52,13 @@ class GuideSCENEViewController: UIViewController, UIScrollViewDelegate {
         
         
         
+    }
+    @IBAction func nextButtonFunc(_ sender: Any) {
+        if chosenAnimal == "Dog"{
+            performSegue(withIdentifier: "dog", sender: self)
+        } else{
+            performSegue(withIdentifier: "cat", sender: self)
+        }
     }
     
     

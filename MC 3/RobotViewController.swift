@@ -16,9 +16,9 @@ class RobotViewController: UIViewController {
     var currentCamera: AVCaptureDevice?
     
     var photoOutput: AVCapturePhotoOutput?
-    
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
     var effect: UIVisualEffect!
+    var chosenAnimal: String = ""
     @IBOutlet weak var visualEffectView: UIVisualEffectView!
     
     @IBOutlet weak var feedbackLabel: UILabel!
@@ -67,7 +67,11 @@ class RobotViewController: UIViewController {
 
     }
     @IBAction func yaPlayViewFunc(){
+        if chosenAnimal == "Dog"{
         robotScreenFeedBackLabel(labelFeedback: "Robot melemparkan bola")
+        }else {
+            robotScreenFeedBackLabel(labelFeedback: "Robot menembakkan laser")
+        }
         animateOut(feedbackView: feedbackPlayButtonView)
         feedbackLabel.isHidden = false
 
@@ -140,6 +144,13 @@ class RobotViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        chosenAnimal = UserDefaults.standard.value(forKey: "chosenAnimal") as! String
+        if chosenAnimal == "Dog"{
+            playButton.setImage(#imageLiteral(resourceName: "dog play button-1"), for: .normal)
+            
+        }
+        else {playButton.setImage(#imageLiteral(resourceName: "cat play button-1"), for: .normal)
+        }
         feedbackLabel.isHidden = true
         effect = visualEffectView.effect
         visualEffectView.isHidden = true
@@ -148,6 +159,8 @@ class RobotViewController: UIViewController {
         setupInputOutput()
         setupPreviewLayer()
         startRunningCaptureSession()
+        
+        
         
         // Do any additional setup after loading the view.
     }

@@ -13,7 +13,7 @@ class InstructionSCENEViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        chosenAnimal = UserDefaults.standard.value(forKey: "chosenAnimal") as! String
         for train in obedienceTrain {
             if train.titletrain == self.titleTrain{
                 images = train.trainImage
@@ -66,7 +66,16 @@ class InstructionSCENEViewController: UIViewController, UIScrollViewDelegate {
     var obedienceTrain = TrainBank.obedienceTrainData()
     var behavioralTrain = TrainBank.behavioralTrainData()
     var audioPlayerClicked: AVAudioPlayer!
+    var chosenAnimal:String = ""
     
+    @IBAction func backButton(_ sender: Any) {
+        if chosenAnimal == "Cat"{
+            performSegue(withIdentifier: "cat", sender: self)
+        }
+        else if chosenAnimal == "Dog"{
+            performSegue(withIdentifier: "dog", sender: self)
+        }
+    }
     @IBAction func clickerButtonClicked(_ sender: Any) {
         
         

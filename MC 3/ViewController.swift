@@ -17,8 +17,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var dogImage: UIImageView!
     @IBOutlet weak var catImage: UIImageView!
     
+    var chosenAnimal : String!
     
     @IBAction func dogButton(_ sender: Any) {
+        
+        chosenAnimal = "Dog"
         
         if(catImage.image == #imageLiteral(resourceName: "cat_2"))
         {
@@ -31,9 +34,12 @@ class ViewController: UIViewController {
         {
         dogImage.image = #imageLiteral(resourceName: "dog_2")
         audioPlayerDog.play()
+        
         }
     }
     @IBAction func catButton(_ sender: Any) {
+        
+        chosenAnimal = "Cat"
         
         if(dogImage.image == #imageLiteral(resourceName: "dog_2"))
         {
@@ -51,8 +57,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func startButton(_ sender: Any) {
+        UserDefaults.standard.set(chosenAnimal, forKey: "chosenAnimal")
         
-        performSegue(withIdentifier: "toGuide", sender: self)
+        performSegue(withIdentifier: "toGuide", sender: chosenAnimal)
         
     }
     
@@ -63,7 +70,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        chosenAnimal = "Dog"
         //SUARA ANJING
         let urlDog = Bundle.main.url(forResource: "dogbark", withExtension: "wav")
         dogImage.image = #imageLiteral(resourceName: "dog_2")
