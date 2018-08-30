@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class InstructionSCENEViewController: UIViewController, UIScrollViewDelegate {
 
@@ -41,6 +42,16 @@ class InstructionSCENEViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentSize = CGSize(width:(scrollView.frame.size.width * CGFloat(images.count)), height: scrollView.frame.size.height)
         scrollView.delegate = self
         
+        
+        let urlClicked = Bundle.main.url(forResource: "clickerfix2", withExtension: "wav")
+        
+        do{
+            audioPlayerClicked = try AVAudioPlayer(contentsOf: urlClicked!)
+            audioPlayerClicked.prepareToPlay()
+        }catch let error as NSError {
+            print(error.debugDescription)
+        }
+        
         // Do any additional setup after loading the view.
     }
 
@@ -48,11 +59,27 @@ class InstructionSCENEViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var pageControl: UIPageControl!
     
+    @IBOutlet weak var clickerButton: UIButton!
     var titleTrain : String = ""
     var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
     var images : [UIImage] = []
     var obedienceTrain = TrainBank.obedienceTrainData()
     var behavioralTrain = TrainBank.behavioralTrainData()
+    var audioPlayerClicked: AVAudioPlayer!
+    
+    @IBAction func clickerButtonClicked(_ sender: Any) {
+        
+        
+        audioPlayerClicked.play()
+        if audioPlayerClicked.isPlaying == true {
+            audioPlayerClicked.currentTime = 0
+        }
+    }
+    
+    @IBAction func clickerButton(_ sender: Any) {
+        
+        //clickerButton.image = UIImage(named: "clicker_guguk.png")
+    }
     
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {

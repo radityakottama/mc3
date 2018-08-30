@@ -13,6 +13,8 @@ class GuideSCENEViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         for index in 0..<images.count{
             
             frame.origin.x = scrollView.frame.size.width * CGFloat(index)
@@ -24,8 +26,11 @@ class GuideSCENEViewController: UIViewController, UIScrollViewDelegate {
             
         }
         
+        
         scrollView.contentSize = CGSize(width:(scrollView.frame.size.width * CGFloat(images.count)), height: scrollView.frame.size.height)
         scrollView.delegate = self
+        
+        
         
         // Do any additional setup after loading the view.
     }
@@ -34,15 +39,24 @@ class GuideSCENEViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var pageControl: UIPageControl!
     
+    @IBOutlet weak var nextButton: UIButton!
+    
     var images: [String] = ["guide_1","guide_2","guide_3"]
     var frame = CGRect(x: 0, y: 0, width: 0, height: 0)
-    
+   
 
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
         let pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width
         pageControl.currentPage = Int(pageNumber)
+        
+        
+        
     }
+    
+    
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
