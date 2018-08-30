@@ -13,7 +13,6 @@
 		A863CB0B2122B9790088EDB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A863CB0A2122B9790088EDB4 /* ViewController.swift */; };
 		A863CB112122B9790088EDB4 /* MC_3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A863CB0F2122B9790088EDB4 /* MC_3.xcdatamodeld */; };
 		A863CB132122B97D0088EDB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A863CB122122B97D0088EDB4 /* Assets.xcassets */; };
-		A863CB162122B97D0088EDB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A863CB142122B97D0088EDB4 /* LaunchScreen.storyboard */; };
 		A8E152BD21355879003A5E28 /* Clicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8E152BC21355879003A5E28 /* Clicker.storyboard */; };
 		A8E152BF21355C30003A5E28 /* KuisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E152BE21355C30003A5E28 /* KuisViewController.swift */; };
 		A8E152C121356655003A5E28 /* KuisBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E152C021356655003A5E28 /* KuisBank.swift */; };
@@ -24,6 +23,7 @@
 		A8EF74C5212BF3C2003B8E39 /* InstructionSCENEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF74C4212BF3C2003B8E39 /* InstructionSCENEViewController.swift */; };
 		A8EF74C7212BF5C1003B8E39 /* ClickerSCENEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EF74C6212BF5C1003B8E39 /* ClickerSCENEViewController.swift */; };
 		A8EF74CB212C100B003B8E39 /* clickerfix2.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8EF74CA212C100B003B8E39 /* clickerfix2.wav */; };
+		F806C05F2136ED1400CD3E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F806C05D2136ED1400CD3E9F /* LaunchScreen.storyboard */; };
 		F86E894A213442EC00963A4C /* MainMenuDogTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2347C212D6CFB009BF4AA /* MainMenuDogTrainingViewController.swift */; };
 		F86E894D2135348200963A4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F86E894B2135348200963A4C /* Main.storyboard */; };
 		F8E2347F212D6CFB009BF4AA /* ObedienceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E2347B212D6CFA009BF4AA /* ObedienceCollectionViewCell.swift */; };
@@ -54,6 +54,7 @@
 		A8EF74C4212BF3C2003B8E39 /* InstructionSCENEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionSCENEViewController.swift; sourceTree = "<group>"; };
 		A8EF74C6212BF5C1003B8E39 /* ClickerSCENEViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerSCENEViewController.swift; sourceTree = "<group>"; };
 		A8EF74CA212C100B003B8E39 /* clickerfix2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clickerfix2.wav; sourceTree = "<group>"; };
+		F806C05E2136ED1400CD3E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F86E894C2135348200963A4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8E2347B212D6CFA009BF4AA /* ObedienceCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObedienceCollectionViewCell.swift; sourceTree = "<group>"; };
 		F8E2347C212D6CFB009BF4AA /* MainMenuDogTrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuDogTrainingViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +106,7 @@
 				A8EF74BD2129B15C003B8E39 /* GuideSCENEViewController.swift */,
 				A8EF74C4212BF3C2003B8E39 /* InstructionSCENEViewController.swift */,
 				A8EF74C6212BF5C1003B8E39 /* ClickerSCENEViewController.swift */,
+				F806C05D2136ED1400CD3E9F /* LaunchScreen.storyboard */,
 				A81207E8212FF9DB0017FDDB /* ClickerInfoSCENEViewController.swift */,
 				F8E2347E212D6CFB009BF4AA /* BehavioralCollectionViewCell.swift */,
 				F8F9E7BD2133A299004570F1 /* MainMenuCatTrainingViewController.swift */,
@@ -116,7 +118,6 @@
 				A8E152C021356655003A5E28 /* KuisBank.swift */,
 				A81207EA2133DC840017FDDB /* CircularTransition.swift */,
 				A863CB122122B97D0088EDB4 /* Assets.xcassets */,
-				F800554C21353E6C0048F0C9 /* Clicker.storyboard */,
 				A863CB172122B97D0088EDB4 /* Info.plist */,
 				A863CB0F2122B9790088EDB4 /* MC_3.xcdatamodeld */,
 				F8F9E7B8212E89DA004570F1 /* RobotViewController.swift */,
@@ -208,7 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F806C05C2135A34D00CD3E9F /* LaunchScreen.storyboard in Resources */,
+				F806C05F2136ED1400CD3E9F /* LaunchScreen.storyboard in Resources */,
 				F8E23488212D9234009BF4AA /* KeepCalm-Medium.ttf in Resources */,
 				A8EF74CB212C100B003B8E39 /* clickerfix2.wav in Resources */,
 				F86E894D2135348200963A4C /* Main.storyboard in Resources */,
@@ -250,10 +251,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A863CB142122B97D0088EDB4 /* LaunchScreen.storyboard */ = {
+		F806C05D2136ED1400CD3E9F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A863CB152122B97D0088EDB4 /* Base */,
+				F806C05E2136ED1400CD3E9F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
