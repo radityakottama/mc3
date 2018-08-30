@@ -13,7 +13,7 @@ class GuideSCENEViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        nextButton.isHidden = true
         
         for index in 0..<images.count{
             
@@ -50,7 +50,11 @@ class GuideSCENEViewController: UIViewController, UIScrollViewDelegate {
         let pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width
         pageControl.currentPage = Int(pageNumber)
         
-        
+        if(pageControl.currentPage == pageControl.numberOfPages - 1){
+            nextButton.isHidden = false
+        }else{
+            nextButton.isHidden = true
+        }
         
     }
     
