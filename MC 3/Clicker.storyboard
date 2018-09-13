@@ -107,6 +107,7 @@
                         <outlet property="clickerImage" destination="nAM-SG-uzd" id="AVa-Ye-Jkg"/>
                         <outlet property="infoButton" destination="UwM-Hi-GsC" id="nkQ-CO-zkk"/>
                         <segue destination="2Kn-0U-jd1" kind="show" identifier="toMainMenu" id="Tpr-WK-bPT"/>
+                        <segue destination="veF-pf-0al" kind="show" identifier="cat" id="0sg-7w-6Y8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wR-mF-e8b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -120,6 +121,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L78-4G-Mnz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="16197" y="361"/>
+        </scene>
+        <!--cat-->
+        <scene sceneID="Agz-aW-Rol">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="cat" storyboardName="Main" referencedIdentifier="cat" id="veF-pf-0al" userLabel="cat" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qa0-xf-Oib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16170" y="257"/>
         </scene>
     </scenes>
     <resources>

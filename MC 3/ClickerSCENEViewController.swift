@@ -12,14 +12,14 @@ import AVFoundation
 class ClickerSCENEViewController: UIViewController, UIViewControllerTransitioningDelegate {
 
     var audioPlayerClicked: AVAudioPlayer!
-  
+    var chosenAnimal:String = ""
     let transition = CircularTransition()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        chosenAnimal = UserDefaults.standard.value(forKey: "chosenAnimal") as! String
         infoButton.layer.cornerRadius = infoButton.frame.width / 2
-        
+        print(chosenAnimal)
         let urlClicked = Bundle.main.url(forResource: "clickerfix2", withExtension: "wav")
         
         do{
@@ -81,8 +81,11 @@ class ClickerSCENEViewController: UIViewController, UIViewControllerTransitionin
     }
     
     @IBAction func MainMenuButton(_ sender: Any) {
-        
+        if chosenAnimal == "Dog"{
         performSegue(withIdentifier: "toMainMenu", sender: self)
+        }else if chosenAnimal == "Cat"{
+            performSegue(withIdentifier: "cat", sender: self)
+        }
     }
     
     

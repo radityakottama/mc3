@@ -21,9 +21,11 @@ class KuisViewController: UIViewController {
     @IBOutlet weak var blurImage: UIImageView!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(titleTrain)
+        chosenAnimal = UserDefaults.standard.value(forKey: "chosenAnimal") as! String
         
         if(titleTrain == "Menggonggong Berlebihan"){
             tempKuis = KuisBank.behavioralTrainData()
@@ -51,7 +53,8 @@ class KuisViewController: UIViewController {
     var titleTrain : String = ""
     var penampung: Int = 0
     var tempKuis : [[String]] = []
-
+    var chosenAnimal : String = ""
+    
 //    var behavioralTrainKuis = KuisBank.behavioralTrainData()
     
     
@@ -109,11 +112,16 @@ class KuisViewController: UIViewController {
         blurImage.isHidden = true
         infoJawaban.isHidden = true
         questionLabel.isHidden = false
-        if(penampung == tempKuis.endIndex)
+        
+        if(penampung == tempKuis.endIndex) && chosenAnimal == "Dog"
         {
             performSegue(withIdentifier: "toTrain", sender: self)
         
-        }else{
+        }
+        else if(penampung == tempKuis.endIndex) && chosenAnimal == "Cat"{
+            performSegue(withIdentifier: "cat", sender: self)
+        }
+        else{
             questionLabel.text = tempKuis[penampung][0]
             penjelasanLabel.isHidden = true
             nextButton.isHidden = true
@@ -129,9 +137,14 @@ class KuisViewController: UIViewController {
         blurImage.isHidden = true
         infoJawaban.isHidden = true
         questionLabel.isHidden = false
-        if  penampung < 0{
+        if  penampung < 0 && chosenAnimal == "Dog"{
             performSegue(withIdentifier: "toTrain", sender: self)
-        }else{
+            
+        }
+            else if penampung < 0 && chosenAnimal == "Cat"{
+                performSegue(withIdentifier: "cat", sender: self)
+            }
+        else{
             questionLabel.text = tempKuis[penampung][0]
             penjelasanLabel.isHidden = true
             nextButton.isHidden = true

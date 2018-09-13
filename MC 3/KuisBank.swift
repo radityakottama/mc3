@@ -58,7 +58,7 @@ class KuisBank {
     static func behavioralTrainCatMencakar() -> [[String]]{
         return
             [
-                ["Still in progress", "Still in progress", "benar"]
+                ["Cari goresan di permukaan benda yang disukai kucing adalah hal pertama yang harus dilakukan untuk menindaklanjuti kebiasaan kucing dalam merusak perabotan rumah.", "Pertama, cari goresan yang berbeda untuk melihat permukaan mana yang lebih disukai kucing Anda. Beberapa kucing hanya suka karpet, beberapa dari mereka suka benda bertali, dan beberapa keduanya. Lainnya seperti goresan kardus datar, sementara beberapa perlu berbaring dengan yang tinggi.", "benar"]
                 
         ]
         

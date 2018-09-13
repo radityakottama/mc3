@@ -15,6 +15,7 @@ class RobotViewController: UIViewController {
     var frontCamera: AVCaptureDevice?
     var currentCamera: AVCaptureDevice?
     
+    
     var photoOutput: AVCapturePhotoOutput?
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
     var effect: UIVisualEffect!
@@ -100,6 +101,13 @@ class RobotViewController: UIViewController {
     @IBAction func tidakWifiViewFunc(_ sender: Any){
         animateOut(feedbackView: feedbackWifiButtonView)
         feedbackLabel.isHidden = true
+    }
+    @IBAction func backButton(_ sender: Any) {if chosenAnimal == "Dog"{
+        performSegue(withIdentifier: "dog", sender: self)
+    }else if chosenAnimal == "Cat"{
+        performSegue(withIdentifier: "cat", sender: self)
+        }
+        
     }
     
     

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EXU-vz-Fba">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EXU-vz-Fba">
     <device id="retina5_9" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,6 +18,159 @@
         <!--Robot View Controller-->
         <scene sceneID="Q2G-vw-IKX">
             <objects>
+                <viewController id="EXU-vz-Fba" customClass="RobotViewController" customModule="MC_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0lv-NE-eNr">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awK-m1-nYf">
+                                <rect key="frame" x="131" y="35" width="550" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
+                                <color key="textColor" red="0.99607843137254903" green="0.97254901960784312" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1Q-cT-FaM">
+                                <rect key="frame" x="113" y="274" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ksR-Hx-khm"/>
+                                    <constraint firstAttribute="width" constant="80" id="yjv-Om-K53"/>
+                                </constraints>
+                                <state key="normal" title="Backward" image="panah bawah"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vul-zg-UB2">
+                                <rect key="frame" x="181" y="234" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="57c-Qv-sco"/>
+                                    <constraint firstAttribute="height" constant="80" id="V2E-PA-6I6"/>
+                                </constraints>
+                                <state key="normal" title="Right" image="panah kanan"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wej-mf-AgS">
+                                <rect key="frame" x="113" y="194" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="BSU-Qk-cFh"/>
+                                    <constraint firstAttribute="width" constant="80" id="TZX-eN-dxw"/>
+                                </constraints>
+                                <state key="normal" title="Forward" image="panah atas"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Uj-Au-jdj">
+                                <rect key="frame" x="46" y="234" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9Ms-ql-ZJr"/>
+                                    <constraint firstAttribute="width" constant="80" id="qlt-fV-LXM"/>
+                                </constraints>
+                                <state key="normal" title="Left" image="panah kiri"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHQ-HS-eSA">
+                                <rect key="frame" x="633" y="284" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="jFz-XB-oGU"/>
+                                    <constraint firstAttribute="width" constant="70" id="jTi-Yp-2HZ"/>
+                                </constraints>
+                                <state key="normal" title="Mic" image="Mic Button-1"/>
+                                <connections>
+                                    <action selector="funcMicButton:" destination="EXU-vz-Fba" eventType="touchUpInside" id="vwD-5l-eZF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuB-VZ-vnr">
+                                <rect key="frame" x="705" y="196" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="0Wj-pt-mIg"/>
+                                    <constraint firstAttribute="height" constant="70" id="bWx-ZM-7OQ"/>
+                                </constraints>
+                                <state key="normal" title="Food" image="Food Button-1"/>
+                                <connections>
+                                    <action selector="funcFoodButton:" destination="EXU-vz-Fba" eventType="touchUpInside" id="dte-hC-2lb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKD-Mc-adY">
+                                <rect key="frame" x="528" y="284" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="CUr-pX-D5U"/>
+                                    <constraint firstAttribute="height" constant="70" id="cfn-jQ-MdL"/>
+                                </constraints>
+                                <state key="normal" title="Play" image="dog play button-1"/>
+                                <connections>
+                                    <action selector="funcPlayButton:" destination="EXU-vz-Fba" eventType="touchUpInside" id="M5b-EC-Y9O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqp-Lv-0NL">
+                                <rect key="frame" x="62" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="6gJ-24-MPw"/>
+                                    <constraint firstAttribute="height" constant="50" id="JHx-Je-dfq"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="exit button 2.0"/>
+                                <connections>
+                                    <action selector="backButton:" destination="EXU-vz-Fba" eventType="touchUpInside" id="k9Z-iS-Ezx"/>
+                                    <segue destination="pCe-Pa-0jF" kind="showDetail" identifier="dog" id="T3t-JY-y5U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTB-n5-RFL">
+                                <rect key="frame" x="705" y="10" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="9g6-rB-ODh"/>
+                                    <constraint firstAttribute="width" constant="70" id="ymE-J3-m42"/>
+                                </constraints>
+                                <state key="normal" title="Wifi" image="wifi button"/>
+                                <connections>
+                                    <action selector="funcWifiButton:" destination="EXU-vz-Fba" eventType="touchUpInside" id="5qj-hz-F93"/>
+                                </connections>
+                            </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ujJ-tp-ATj">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="u6M-Aa-sjJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <vibrancyEffect>
+                                    <blurEffect style="light"/>
+                                </vibrancyEffect>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="t1Q-cT-FaM" secondAttribute="trailing" constant="575" id="0j0-Gw-SSn"/>
+                            <constraint firstItem="oHQ-HS-eSA" firstAttribute="bottom" secondItem="TeP-BP-hcj" secondAttribute="bottom" id="0y2-0j-xwo"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="wej-mf-AgS" secondAttribute="trailing" constant="575" id="42U-JU-HdL"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="vul-zg-UB2" secondAttribute="trailing" constant="507" id="7LT-x2-4Y8"/>
+                            <constraint firstItem="oHQ-HS-eSA" firstAttribute="top" secondItem="ZuB-VZ-vnr" secondAttribute="bottom" constant="18" id="8hP-PF-y7w"/>
+                            <constraint firstItem="ZuB-VZ-vnr" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="661" id="AzK-q0-kaE"/>
+                            <constraint firstItem="vul-zg-UB2" firstAttribute="leading" secondItem="1Uj-Au-jdj" secondAttribute="trailing" constant="55" id="BSk-43-Tmh"/>
+                            <constraint firstItem="pqp-Lv-0NL" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="18" id="DHn-Us-Jcn"/>
+                            <constraint firstItem="oHQ-HS-eSA" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="589" id="E82-fr-m80"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="WTB-n5-RFL" secondAttribute="trailing" constant="-7" id="EiM-ve-1is"/>
+                            <constraint firstItem="t1Q-cT-FaM" firstAttribute="top" secondItem="wej-mf-AgS" secondAttribute="bottom" id="Fqc-Wd-QyA"/>
+                            <constraint firstItem="pqp-Lv-0NL" firstAttribute="top" secondItem="TeP-BP-hcj" secondAttribute="top" constant="20" id="G0e-jf-5Zo"/>
+                            <constraint firstItem="WTB-n5-RFL" firstAttribute="top" secondItem="TeP-BP-hcj" secondAttribute="top" constant="10" id="Hmw-QD-flS"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="bottom" secondItem="1Uj-Au-jdj" secondAttribute="bottom" constant="40" id="IBc-ER-drO"/>
+                            <constraint firstItem="t1Q-cT-FaM" firstAttribute="bottom" secondItem="TeP-BP-hcj" secondAttribute="bottom" id="Pw8-tD-I54"/>
+                            <constraint firstItem="ZuB-VZ-vnr" firstAttribute="top" secondItem="bKD-Mc-adY" secondAttribute="bottom" constant="-158" id="VTv-Zw-c38"/>
+                            <constraint firstItem="bKD-Mc-adY" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="484" id="WyB-x1-ttf"/>
+                            <constraint firstItem="TeP-BP-hcj" firstAttribute="bottom" secondItem="vul-zg-UB2" secondAttribute="bottom" constant="40" id="fAf-Dc-Wr8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TeP-BP-hcj"/>
+                    </view>
+                    <connections>
+                        <outlet property="feedbackFoodButtonView" destination="lpP-Hf-gTf" id="WOW-bR-X9s"/>
+                        <outlet property="feedbackLabel" destination="awK-m1-nYf" id="mgo-EE-02h"/>
+                        <outlet property="feedbackMicButtonView" destination="KqM-dQ-OQs" id="TNm-tN-gTN"/>
+                        <outlet property="feedbackPlayButtonView" destination="0UY-df-0QL" id="HuJ-3O-l1Z"/>
+                        <outlet property="feedbackWifiButtonView" destination="orv-BA-JJU" id="2tE-pK-jC6"/>
+                        <outlet property="foodButton" destination="ZuB-VZ-vnr" id="NwV-n2-CI8"/>
+                        <outlet property="micButton" destination="oHQ-HS-eSA" id="XYO-nK-dkN"/>
+                        <outlet property="playButton" destination="bKD-Mc-adY" id="Itn-8i-xN5"/>
+                        <outlet property="tidakFoodViewButton" destination="7HX-Gz-Pc6" id="wXd-as-vAG"/>
+                        <outlet property="tidakMicViewButton" destination="BLn-sk-M0O" id="3rP-aP-K6b"/>
+                        <outlet property="tidakPlayViewButton" destination="iah-fC-3dS" id="8ef-pz-90a"/>
+                        <outlet property="tidakWifiViewButton" destination="CXK-kO-vIf" id="WlN-Rf-xae"/>
+                        <outlet property="visualEffectView" destination="ujJ-tp-ATj" id="xXK-34-Pro"/>
+                        <outlet property="wifiButton" destination="WTB-n5-RFL" id="WMH-LS-kNU"/>
+                        <segue destination="RZp-0u-teI" kind="show" identifier="cat" id="uCV-DQ-Krm"/>
+                    </connections>
+                </viewController>
                 <view contentMode="scaleToFill" id="orv-BA-JJU">
                     <rect key="frame" x="0.0" y="0.0" width="520" height="151"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -202,157 +355,6 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <viewLayoutGuide key="safeArea" id="Ymy-rB-k2F"/>
                 </view>
-                <viewController id="EXU-vz-Fba" customClass="RobotViewController" customModule="MC_3" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0lv-NE-eNr">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awK-m1-nYf">
-                                <rect key="frame" x="131" y="35" width="550" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="KeepCalm-Medium" family="Keep Calm" pointSize="17"/>
-                                <color key="textColor" red="0.99607843137254903" green="0.97254901960784312" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1Q-cT-FaM">
-                                <rect key="frame" x="113" y="274" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="ksR-Hx-khm"/>
-                                    <constraint firstAttribute="width" constant="80" id="yjv-Om-K53"/>
-                                </constraints>
-                                <state key="normal" title="Backward" image="panah bawah"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vul-zg-UB2">
-                                <rect key="frame" x="181" y="234" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="57c-Qv-sco"/>
-                                    <constraint firstAttribute="height" constant="80" id="V2E-PA-6I6"/>
-                                </constraints>
-                                <state key="normal" title="Right" image="panah kanan"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wej-mf-AgS">
-                                <rect key="frame" x="113" y="194" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="BSU-Qk-cFh"/>
-                                    <constraint firstAttribute="width" constant="80" id="TZX-eN-dxw"/>
-                                </constraints>
-                                <state key="normal" title="Forward" image="panah atas"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Uj-Au-jdj">
-                                <rect key="frame" x="46" y="234" width="80" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="9Ms-ql-ZJr"/>
-                                    <constraint firstAttribute="width" constant="80" id="qlt-fV-LXM"/>
-                                </constraints>
-                                <state key="normal" title="Left" image="panah kiri"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oHQ-HS-eSA">
-                                <rect key="frame" x="633" y="284" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="jFz-XB-oGU"/>
-                                    <constraint firstAttribute="width" constant="70" id="jTi-Yp-2HZ"/>
-                                </constraints>
-                                <state key="normal" title="Mic" image="Mic Button-1"/>
-                                <connections>
-                                    <action selector="funcMicButton:" destination="EXU-vz-Fba" eventType="touchUpInside" id="vwD-5l-eZF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuB-VZ-vnr">
-                                <rect key="frame" x="705" y="196" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="0Wj-pt-mIg"/>
-                                    <constraint firstAttribute="height" constant="70" id="bWx-ZM-7OQ"/>
-                                </constraints>
-                                <state key="normal" title="Food" image="Food Button-1"/>
-                                <connections>
-                                    <action selector="funcFoodButton:" destination="EXU-vz-Fba" eventType="touchUpInside" id="dte-hC-2lb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKD-Mc-adY">
-                                <rect key="frame" x="528" y="284" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="CUr-pX-D5U"/>
-                                    <constraint firstAttribute="height" constant="70" id="cfn-jQ-MdL"/>
-                                </constraints>
-                                <state key="normal" title="Play" image="dog play button-1"/>
-                                <connections>
-                                    <action selector="funcPlayButton:" destination="EXU-vz-Fba" eventType="touchUpInside" id="M5b-EC-Y9O"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqp-Lv-0NL">
-                                <rect key="frame" x="62" y="20" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="6gJ-24-MPw"/>
-                                    <constraint firstAttribute="height" constant="50" id="JHx-Je-dfq"/>
-                                </constraints>
-                                <state key="normal" backgroundImage="exit button 2.0"/>
-                                <connections>
-                                    <segue destination="pCe-Pa-0jF" kind="showDetail" id="T3t-JY-y5U"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTB-n5-RFL">
-                                <rect key="frame" x="705" y="10" width="70" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="9g6-rB-ODh"/>
-                                    <constraint firstAttribute="width" constant="70" id="ymE-J3-m42"/>
-                                </constraints>
-                                <state key="normal" title="Wifi" image="wifi button"/>
-                                <connections>
-                                    <action selector="funcWifiButton:" destination="EXU-vz-Fba" eventType="touchUpInside" id="5qj-hz-F93"/>
-                                </connections>
-                            </button>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ujJ-tp-ATj">
-                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="u6M-Aa-sjJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                </view>
-                                <vibrancyEffect>
-                                    <blurEffect style="light"/>
-                                </vibrancyEffect>
-                            </visualEffectView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="t1Q-cT-FaM" secondAttribute="trailing" constant="575" id="0j0-Gw-SSn"/>
-                            <constraint firstItem="oHQ-HS-eSA" firstAttribute="bottom" secondItem="TeP-BP-hcj" secondAttribute="bottom" id="0y2-0j-xwo"/>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="wej-mf-AgS" secondAttribute="trailing" constant="575" id="42U-JU-HdL"/>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="vul-zg-UB2" secondAttribute="trailing" constant="507" id="7LT-x2-4Y8"/>
-                            <constraint firstItem="oHQ-HS-eSA" firstAttribute="top" secondItem="ZuB-VZ-vnr" secondAttribute="bottom" constant="18" id="8hP-PF-y7w"/>
-                            <constraint firstItem="ZuB-VZ-vnr" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="661" id="AzK-q0-kaE"/>
-                            <constraint firstItem="vul-zg-UB2" firstAttribute="leading" secondItem="1Uj-Au-jdj" secondAttribute="trailing" constant="55" id="BSk-43-Tmh"/>
-                            <constraint firstItem="pqp-Lv-0NL" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="18" id="DHn-Us-Jcn"/>
-                            <constraint firstItem="oHQ-HS-eSA" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="589" id="E82-fr-m80"/>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="trailing" secondItem="WTB-n5-RFL" secondAttribute="trailing" constant="-7" id="EiM-ve-1is"/>
-                            <constraint firstItem="t1Q-cT-FaM" firstAttribute="top" secondItem="wej-mf-AgS" secondAttribute="bottom" id="Fqc-Wd-QyA"/>
-                            <constraint firstItem="pqp-Lv-0NL" firstAttribute="top" secondItem="TeP-BP-hcj" secondAttribute="top" constant="20" id="G0e-jf-5Zo"/>
-                            <constraint firstItem="WTB-n5-RFL" firstAttribute="top" secondItem="TeP-BP-hcj" secondAttribute="top" constant="10" id="Hmw-QD-flS"/>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="bottom" secondItem="1Uj-Au-jdj" secondAttribute="bottom" constant="40" id="IBc-ER-drO"/>
-                            <constraint firstItem="t1Q-cT-FaM" firstAttribute="bottom" secondItem="TeP-BP-hcj" secondAttribute="bottom" id="Pw8-tD-I54"/>
-                            <constraint firstItem="ZuB-VZ-vnr" firstAttribute="top" secondItem="bKD-Mc-adY" secondAttribute="bottom" constant="-158" id="VTv-Zw-c38"/>
-                            <constraint firstItem="bKD-Mc-adY" firstAttribute="leading" secondItem="TeP-BP-hcj" secondAttribute="leading" constant="484" id="WyB-x1-ttf"/>
-                            <constraint firstItem="TeP-BP-hcj" firstAttribute="bottom" secondItem="vul-zg-UB2" secondAttribute="bottom" constant="40" id="fAf-Dc-Wr8"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="TeP-BP-hcj"/>
-                    </view>
-                    <connections>
-                        <outlet property="feedbackFoodButtonView" destination="lpP-Hf-gTf" id="WOW-bR-X9s"/>
-                        <outlet property="feedbackLabel" destination="awK-m1-nYf" id="mgo-EE-02h"/>
-                        <outlet property="feedbackMicButtonView" destination="KqM-dQ-OQs" id="TNm-tN-gTN"/>
-                        <outlet property="feedbackPlayButtonView" destination="0UY-df-0QL" id="HuJ-3O-l1Z"/>
-                        <outlet property="feedbackWifiButtonView" destination="orv-BA-JJU" id="2tE-pK-jC6"/>
-                        <outlet property="foodButton" destination="ZuB-VZ-vnr" id="NwV-n2-CI8"/>
-                        <outlet property="micButton" destination="oHQ-HS-eSA" id="XYO-nK-dkN"/>
-                        <outlet property="playButton" destination="bKD-Mc-adY" id="Itn-8i-xN5"/>
-                        <outlet property="tidakFoodViewButton" destination="7HX-Gz-Pc6" id="wXd-as-vAG"/>
-                        <outlet property="tidakMicViewButton" destination="BLn-sk-M0O" id="3rP-aP-K6b"/>
-                        <outlet property="tidakPlayViewButton" destination="iah-fC-3dS" id="8ef-pz-90a"/>
-                        <outlet property="tidakWifiViewButton" destination="CXK-kO-vIf" id="WlN-Rf-xae"/>
-                        <outlet property="visualEffectView" destination="ujJ-tp-ATj" id="xXK-34-Pro"/>
-                        <outlet property="wifiButton" destination="WTB-n5-RFL" id="WMH-LS-kNU"/>
-                    </connections>
-                </viewController>
             </objects>
             <point key="canvasLocation" x="16073" y="598"/>
         </scene>
@@ -362,7 +364,15 @@
                 <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UIViewController-i1B-ew-HOc" id="pCe-Pa-0jF" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NXB-tj-EkS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15261.6" y="-341.37931034482762"/>
+            <point key="canvasLocation" x="16201" y="-318"/>
+        </scene>
+        <!--cat-->
+        <scene sceneID="5Z2-OT-vAB">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="cat" id="RZp-0u-teI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n2h-oR-qu9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15801" y="-83"/>
         </scene>
     </scenes>
     <resources>

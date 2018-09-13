@@ -45,6 +45,7 @@ class InstructionSCENEViewController: UIViewController, UIScrollViewDelegate {
             
             let imageView = UIImageView(frame: frame)
             imageView.image = images[index]
+            imageView.contentMode = .scaleAspectFit
             self.scrollView.addSubview(imageView)
         }
         
